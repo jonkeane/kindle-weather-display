@@ -93,7 +93,7 @@
 	<text transform="matrix(1 0 0 1 762.4903 271.9326)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
 	<text transform="matrix(1 0 0 1 762.4903 240.873)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
 	<text transform="matrix(1 0 0 1 762.4903 209.8145)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 165 162.3452)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="48">TIME</text>
+	<text transform="matrix(1 0 0 1 26.672 162.3452)" font-family="'DejaVuSans'" font-size="48">TIME</text>
 </g>
 <g id="transitDynamicVars" display="none">
 	<text transform="matrix(1 0 0 1 227.0733 105.4688)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS1_U1</text>
@@ -126,7 +126,7 @@
 	<text transform="matrix(1 0 0 1 762.4903 271.9326)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS5_D3</text>
 	<text transform="matrix(1 0 0 1 762.4903 240.873)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS5_D2</text>
 	<text transform="matrix(1 0 0 1 762.4903 209.8145)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS5_D1</text>
-	<text transform="matrix(1 0 0 1 165 162.3452)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="48">TIME</text>
+	<text transform="matrix(1 0 0 1 26.672 162.3452)" font-family="'DejaVuSans'" font-size="48">TIME</text>
 </g>
 <g id="transitStatic" display="DISP_TRANSIT">
 	<g>

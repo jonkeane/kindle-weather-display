@@ -25,7 +25,7 @@ def fileChecker(path, refreshInterval):
         output = "create"
     return output
     
-def weatherGraber(type, path, apiKey=privateVars.apiKey, zipCode=privateVars.zipCode):
+def weatherGrabber(type, path, apiKey=privateVars.apiKey, zipCode=privateVars.zipCode):
     f = urllib2.urlopen('http://api.wunderground.com/api/'+apiKey+'/geolookup/'+type+'/q/'+zipCode+'.json')
     currFile = open(path, "w")
     currFile.write(f.read())
@@ -42,9 +42,9 @@ hide="none"
 
 ### Deal with the currentConditions file
 # check the currenConditions file to see if it's older than 5 minutes
-if fileChecker("weather/currentConditions.json", 300) == "create":
-    weatherGraber(type="conditions", path="weather/currentConditions.json")
-fCurrCond = open("weather/currentConditions.json",'r')
+if fileChecker("localData/currentConditions.json", 300) == "create":
+    weatherGrabber(type="conditions", path="localData/currentConditions.json")
+fCurrCond = open("localData/currentConditions.json",'r')
 
 # read the file
 json_string = fCurrCond.read()
@@ -76,7 +76,11 @@ output = output.replace('CURR_COND_ICON',icon)
 
 #get localtime, add a minute to align better after synchronization
 lTime = time.localtime()
-lTimeF = str(lTime.tm_hour)+":"+str(lTime.tm_min+1)
+hrs = str(lTime.tm_hour)
+mins = str(lTime.tm_min+1)
+if len(mins) < 2:
+    mins = "0"+mins
+lTimeF = hrs+":"+mins
 output = output.replace('TIME',str(lTimeF))
 
 output = output.replace('DISP_CURR',show)

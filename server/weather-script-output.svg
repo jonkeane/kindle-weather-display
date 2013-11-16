@@ -50,7 +50,7 @@
 		<path d="M49.999,0c-27.614,0-50,22.385-50,50c0,27.613,22.386,50,50,50s50-22.387,50-50C99.999,22.384,77.611,0,49.999,0z
 			 M49.998,54.072L74.072,30l12.963,12.963L49.998,79.998L12.961,42.964L25.924,30L49.998,54.072z"/>
 	</g>
-	<text transform="matrix(1 0 0 1 671.2121 544.5)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="30">11</text>
+	<text transform="matrix(1 0 0 1 671.2121 544.5)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="30">8</text>
 	<text transform="matrix(1 0 0 1 470.261 544.5)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="30">92</text>
 	<text transform="matrix(1 0 0 1 705.5256 418.248)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="30">54</text>
 </g>
@@ -94,7 +94,7 @@
 	<text transform="matrix(1 0 0 1 762.4903 271.9326)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
 	<text transform="matrix(1 0 0 1 762.4903 240.873)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
 	<text transform="matrix(1 0 0 1 762.4903 209.8145)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 165 162.3452)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="48">14:4</text>
+	<text transform="matrix(1 0 0 1 26.672 162.3452)" font-family="'DejaVuSans'" font-size="48">14:10</text>
 </g>
 <g id="transitDynamicVars" display="none">
 	<text transform="matrix(1 0 0 1 227.0733 105.4688)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS1_U1</text>
@@ -127,7 +127,7 @@
 	<text transform="matrix(1 0 0 1 762.4903 271.9326)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS5_D3</text>
 	<text transform="matrix(1 0 0 1 762.4903 240.873)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS5_D2</text>
 	<text transform="matrix(1 0 0 1 762.4903 209.8145)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS5_D1</text>
-	<text transform="matrix(1 0 0 1 165 162.3452)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="48">14:4</text>
+	<text transform="matrix(1 0 0 1 26.672 162.3452)" font-family="'DejaVuSans'" font-size="48">14:10</text>
 </g>
 <g id="transitStatic" display="inline">
 	<g>
