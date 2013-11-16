@@ -36,25 +36,24 @@
 	<text transform="matrix(1 0 0 1 413 544.5)" font-family="'DejaVuSans'" font-size="30">100</text>
 	<text transform="matrix(1 0 0 1 648.2646 418.248)" font-family="'DejaVuSans'" font-size="30">100</text>
 </g>
-<g id="currentDynamicVars" display="inline">
+<g id="currentDynamicVars" display="DISP_CURR">
 
     <g id="svgcurrcondicon" transform="translate(55.292 283.863) scale(3.25)">
-		<path d="m81.245,40.626c-2.34,0-4.558,0.484-6.615,1.264-1.788-11.321-11.508-20.013-23.326-20.013-13.095,0-23.702,10.608-23.702,23.696,0,0.296,0.081,0.571,0.094,0.867-0.296-0.02-0.578-0.087-0.874-0.087-7.045,0-12.759,5.714-12.759,12.759,0,0.087,0.027,0.168,0.027,0.255-1.008-0.302-2.05-0.518-3.153-0.518-6.043,0-10.937,4.901-10.937,10.938,0,6.043,4.894,8.335,10.937,8.335h70.308c10.358,0,18.755-8.389,18.755-18.748s-8.396-18.748-18.755-18.748z"/>
-
+		CURR_COND_ICON
 	</g>
 	
 
-	<text transform="matrix(1 0 0 1 516.521 382.5)" font-family="'DejaVuSans'" style="text-anchor:end;"  font-size="60">54</text>
+	<text transform="matrix(1 0 0 1 516.521 382.5)" font-family="'DejaVuSans'" style="text-anchor:end;"  font-size="60">CURRTEMP</text>
 	
-	<g id="svgcurrwindicon" transform="translate(648.267 440.4) scale(0.75) rotate(180, 50, 50)">
+	<g id="svgcurrwindicon" transform="translate(648.267 440.4) scale(0.75) rotate(WIND_DEGS, 50, 50)">
 		<path d="M49.999,0c-27.614,0-50,22.385-50,50c0,27.613,22.386,50,50,50s50-22.387,50-50C99.999,22.384,77.611,0,49.999,0z
 			 M49.998,54.072L74.072,30l12.963,12.963L49.998,79.998L12.961,42.964L25.924,30L49.998,54.072z"/>
 	</g>
-	<text transform="matrix(1 0 0 1 671.2121 544.5)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="30">11</text>
-	<text transform="matrix(1 0 0 1 470.261 544.5)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="30">92</text>
-	<text transform="matrix(1 0 0 1 705.5256 418.248)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="30">54</text>
+	<text transform="matrix(1 0 0 1 671.2121 544.5)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="30">CURRWIND</text>
+	<text transform="matrix(1 0 0 1 470.261 544.5)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="30">CURRHUM</text>
+	<text transform="matrix(1 0 0 1 705.5256 418.248)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="30">CURRFEELS</text>
 </g>
-<g id="currentStatic" display="inline">
+<g id="currentStatic" display="DISP_CURR">
 	<text transform="matrix(1 0 0 1 512 368.5)" font-family="'DejaVuSans'" font-size="40">°F</text>
 	<text transform="matrix(1 0 0 1 671.0381 544.5)" font-family="'DejaVuSans'" font-size="20">mph</text>
 	<text transform="matrix(1 0 0 1 415 512.5)" font-family="'DejaVuSans'" font-size="20">Humidity</text>
@@ -63,217 +62,192 @@
 	<text transform="matrix(1 0 0 1 563.2646 417.75)" font-family="'DejaVuSans'" font-size="20">feels like</text>
 </g>
 
-<g id="transitDynamic" display="inline">
-	<text transform="matrix(1 0 0 1 227.0733 105.4688)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">5</text>
-	<text transform="matrix(1 0 0 1 227.0733 74.4102)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">10</text>
-	<text transform="matrix(1 0 0 1 227.0733 43.3516)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 227.0733 271.9326)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 227.0733 240.873)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">10</text>
-	<text transform="matrix(1 0 0 1 227.0733 209.8145)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">5</text>
-	<text transform="matrix(1 0 0 1 362.6793 105.4688)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 362.6793 74.4102)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 362.6793 43.3516)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 362.6793 271.9326)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 362.6793 240.873)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 362.6793 209.8145)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>	
-	<text transform="matrix(1 0 0 1 492.6095 105.4688)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 492.6095 74.4102)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 492.6095 43.3516)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 492.6095 271.9326)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 492.6095 240.873)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 492.6095 209.8145)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 626.127 105.4688)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 626.127 74.4102)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 626.127 43.3516)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 626.127 271.9326)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 626.127 240.873)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 626.127 209.8145)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 762.4903 105.4688)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 762.4903 74.4102)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 762.4903 43.3516)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 762.4903 271.9326)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 762.4903 240.873)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 762.4903 209.8145)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">24</text>
-	<text transform="matrix(1 0 0 1 165 162.3452)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="48">14:4</text>
+<g id="transitDynamic" display="DISP_TRANSIT">
+	<text transform="matrix(1 0 0 1 247.0733 105.4692)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 247.0733 74.4102)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 247.0733 43.3516)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 247.0733 271.9326)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 247.0733 240.8735)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 247.0733 209.8149)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 372.3678 105.4692)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 372.3678 74.4102)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 372.3678 43.3516)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 372.3678 271.9326)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 372.3678 240.8735)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 372.3678 209.8149)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 497.6622 105.4692)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 497.6622 74.4102)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 497.6622 43.3516)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 497.6622 271.9326)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 497.6622 240.8735)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 497.6622 209.8149)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 622.9571 105.4692)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 622.9571 74.4102)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 622.9571 43.3516)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 622.9571 271.9326)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 622.9571 240.8735)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 622.9571 209.8149)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 748.4903 105.4692)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 748.4903 74.4102)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 748.4903 43.3516)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 748.4903 271.9326)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 748.4903 240.8735)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 748.4903 209.8149)" display="inline" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">24</text>
+	<text transform="matrix(1 0 0 1 165 162.3452)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="48">TIME</text>
 </g>
 <g id="transitDynamicVars" display="none">
-	<text transform="matrix(1 0 0 1 227.0733 105.4688)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS1_U1</text>
-	<text transform="matrix(1 0 0 1 227.0733 74.4102)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS1_U2</text>
-	<text transform="matrix(1 0 0 1 227.0733 43.3516)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS1_U3</text>
-	<text transform="matrix(1 0 0 1 227.0733 271.9326)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS1_D3</text>
-	<text transform="matrix(1 0 0 1 227.0733 240.873)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS1_D2</text>
-	<text transform="matrix(1 0 0 1 227.0733 209.8145)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS1_D1</text>
-	<text transform="matrix(1 0 0 1 362.6793 105.4688)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS2_U1</text>
-	<text transform="matrix(1 0 0 1 362.6793 74.4102)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS2_U2</text>
-	<text transform="matrix(1 0 0 1 362.6793 43.3516)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS2_U3</text>
-	<text transform="matrix(1 0 0 1 362.6793 271.9326)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS2_D3</text>
-	<text transform="matrix(1 0 0 1 362.6793 240.873)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS2_D2</text>
-	<text transform="matrix(1 0 0 1 362.6793 209.8145)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS2_D1</text>
-	<text transform="matrix(1 0 0 1 492.6095 105.4688)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS3_U1</text>
-	<text transform="matrix(1 0 0 1 492.6095 74.4102)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS3_U2</text>
-	<text transform="matrix(1 0 0 1 492.6095 43.3516)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS3_U3</text>
-	<text transform="matrix(1 0 0 1 492.6095 271.9326)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS3_D3</text>
-	<text transform="matrix(1 0 0 1 492.6095 240.873)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS3_D2</text>
-	<text transform="matrix(1 0 0 1 492.6095 209.8145)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS3_D1</text>
-	<text transform="matrix(1 0 0 1 626.127 105.4688)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS4_U1</text>
-	<text transform="matrix(1 0 0 1 626.127 74.4102)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS4_U2</text>
-	<text transform="matrix(1 0 0 1 626.127 43.3516)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS4_U3</text>
-	<text transform="matrix(1 0 0 1 626.127 271.9326)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS4_D3</text>
-	<text transform="matrix(1 0 0 1 626.127 240.873)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS4_D2</text>
-	<text transform="matrix(1 0 0 1 626.127 209.8145)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS4_D1</text>
-	<text transform="matrix(1 0 0 1 762.4903 105.4688)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS5_U1</text>
-	<text transform="matrix(1 0 0 1 762.4903 74.4102)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS5_U2</text>
-	<text transform="matrix(1 0 0 1 762.4903 43.3516)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS5_U3</text>
-	<text transform="matrix(1 0 0 1 762.4903 271.9326)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS5_D3</text>
-	<text transform="matrix(1 0 0 1 762.4903 240.873)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS5_D2</text>
-	<text transform="matrix(1 0 0 1 762.4903 209.8145)" font-family="'DejaVuSans'"  style="text-anchor:end;"  font-size="28">BUS5_D1</text>
-	<text transform="matrix(1 0 0 1 165 162.3452)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="48">14:4</text>
+	<text transform="matrix(1 0 0 1 247.0733 105.4692)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS1_U1</text>
+	<text transform="matrix(1 0 0 1 247.0733 74.4102)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS1_U2</text>
+	<text transform="matrix(1 0 0 1 247.0733 43.3516)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS1_U3</text>
+	<text transform="matrix(1 0 0 1 247.0733 271.9326)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS1_D3</text>
+	<text transform="matrix(1 0 0 1 247.0733 240.8735)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS1_D2</text>
+	<text transform="matrix(1 0 0 1 247.0733 209.8149)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS1_D1</text>
+	<text transform="matrix(1 0 0 1 372.3678 105.4692)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS2_U1</text>
+	<text transform="matrix(1 0 0 1 372.3678 74.4102)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS2_U2</text>
+	<text transform="matrix(1 0 0 1 372.3678 43.3516)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS2_U3</text>
+	<text transform="matrix(1 0 0 1 372.3678 271.9326)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS2_D3</text>
+	<text transform="matrix(1 0 0 1 372.3678 240.8735)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS2_D2</text>
+	<text transform="matrix(1 0 0 1 372.3678 209.8149)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS2_D1</text>
+	<text transform="matrix(1 0 0 1 497.6622 105.4692)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS3_U1</text>
+	<text transform="matrix(1 0 0 1 497.6622 74.4102)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS3_U2</text>
+	<text transform="matrix(1 0 0 1 497.6622 43.3516)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS3_U3</text>
+	<text transform="matrix(1 0 0 1 497.6622 271.9326)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS3_D3</text>
+	<text transform="matrix(1 0 0 1 497.6622 240.8735)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS3_D2</text>
+	<text transform="matrix(1 0 0 1 497.6622 209.8149)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS3_D1</text>
+	<text transform="matrix(1 0 0 1 622.9571 105.4692)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS4_U1</text>
+	<text transform="matrix(1 0 0 1 622.9571 74.4102)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS4_U2</text>
+	<text transform="matrix(1 0 0 1 622.9571 43.3516)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS4_U3</text>
+	<text transform="matrix(1 0 0 1 622.9571 271.9326)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS4_D3</text>
+	<text transform="matrix(1 0 0 1 622.9571 240.8735)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS4_D2</text>
+	<text transform="matrix(1 0 0 1 622.9571 209.8149)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS4_D1</text>
+	<text transform="matrix(1 0 0 1 748.4903 105.4692)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS5_U1</text>
+	<text transform="matrix(1 0 0 1 748.4903 74.4102)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS5_U2</text>
+	<text transform="matrix(1 0 0 1 748.4903 43.3516)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS5_U3</text>
+	<text transform="matrix(1 0 0 1 748.4903 271.9326)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS5_D3</text>
+	<text transform="matrix(1 0 0 1 748.4903 240.8735)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS5_D2</text>
+	<text transform="matrix(1 0 0 1 748.4903 209.8149)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="28">BUS5_D1</text>
+	<text transform="matrix(1 0 0 1 165 162.3452)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="48">TIME</text>
 </g>
-<g id="transitStatic" display="inline">
+<g id="transitStatic" display="DISP_TRANSIT">
 	<g>
-		<path fill="#010101" d="M466.815,118.971c0,0-8.05,0.197-8.843,11.587c-0.795,11.39,1.188,46.097,1.188,46.097l6.565-0.007v3.64
-			c0,1.222,0.989,2.211,2.214,2.211h2.688c1.222,0,2.211-0.99,2.211-2.211v-3.649l32.031-0.039v3.688
-			c0,1.222,0.988,2.211,2.211,2.211h2.688c1.222,0,2.214-0.99,2.214-2.211v-3.696l5.717-0.005c0,0,1.983-34.706,1.19-46.097
-			c-0.793-11.391-8.841-11.587-8.841-11.587s-9.229-1.404-21.65-1.404C474.976,117.5,466.815,118.971,466.815,118.971z
-			 M476.683,119.378h24.278c1.3,0,2.352,0.972,2.352,2.167c0,1.198-1.052,2.17-2.352,2.17h-24.278c-1.3,0-2.353-0.972-2.353-2.17
-			C474.331,120.35,475.384,119.378,476.683,119.378z M469.169,167.772c-1.741,0-3.151-1.41-3.151-3.152
-			c0-1.742,1.41-3.155,3.151-3.155c1.742,0,3.152,1.413,3.152,3.155C472.321,166.362,470.911,167.772,469.169,167.772z
-			 M508.487,167.77c-1.738,0-3.152-1.408-3.152-3.153c0-1.741,1.414-3.152,3.152-3.152c1.741,0,3.155,1.411,3.155,3.152
-			C511.645,166.363,510.229,167.77,508.487,167.77z M513.468,150.854c0,2.595-2.104,4.697-4.696,4.697h-40.091
-			c-2.597,0-4.696-2.103-4.696-4.697v-20.423c0-2.595,2.102-4.697,4.696-4.697h40.091c2.594,0,4.696,2.103,4.696,4.697V150.854
-			L513.468,150.854z"/>
-		<text transform="matrix(1 0 0 1 465.3164 150.373)" fill="#010101" font-family="'DejaVuSans'" font-size="24.2216">151</text>
+		<path fill="#010101" d="M221.279,118.971c0,0-8.048,0.197-8.84,11.587c-0.796,11.39,1.189,46.097,1.189,46.097l6.567-0.007v3.64
+			c0,1.222,0.99,2.211,2.211,2.211h2.688c1.221,0,2.211-0.99,2.211-2.211v-3.649l32.03-0.039v3.688c0,1.222,0.988,2.211,2.211,2.211
+			h2.687c1.222,0,2.214-0.99,2.214-2.211v-3.696l5.716-0.005c0,0,1.986-34.706,1.192-46.097c-0.793-11.391-8.84-11.587-8.84-11.587
+			s-9.229-1.404-21.651-1.404C229.44,117.5,221.279,118.971,221.279,118.971z M231.147,119.378h24.279
+			c1.3,0,2.351,0.972,2.351,2.167c0,1.198-1.051,2.17-2.351,2.17h-24.279c-1.299,0-2.352-0.972-2.352-2.17
+			C228.796,120.35,229.848,119.378,231.147,119.378z M223.634,167.772c-1.742,0-3.152-1.41-3.152-3.152s1.41-3.155,3.152-3.155
+			s3.152,1.413,3.152,3.155S225.376,167.772,223.634,167.772z M262.952,167.77c-1.739,0-3.152-1.408-3.152-3.153
+			c0-1.741,1.413-3.152,3.152-3.152c1.741,0,3.155,1.411,3.155,3.152C266.107,166.363,264.693,167.77,262.952,167.77z
+			 M267.932,150.854c0,2.595-2.103,4.697-4.698,4.697h-40.09c-2.596,0-4.697-2.103-4.697-4.697v-20.423
+			c0-2.595,2.102-4.697,4.697-4.697h40.09c2.595,0,4.698,2.103,4.698,4.697V150.854L267.932,150.854z"/>
+		<text transform="matrix(1 0 0 1 226.3535 150.373)" fill="#010101" font-family="'DejaVuSans'" font-size="26.0008">36</text>
 	</g>
-	<text transform="matrix(1 0 0 1 492.9805 105.4688)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 492.9805 74.4102)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 492.9805 43.3516)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 492.9805 271.9326)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 492.9805 240.873)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 492.9805 209.8145)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 247.4443 105.4692)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 247.4443 74.4102)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 247.4443 43.3516)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 247.4443 271.9326)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 247.4443 240.8735)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 247.4443 209.8149)" font-family="'DejaVuSans'" font-size="16">m</text>
 	<g>
-		<path fill="#010101" d="M454.701,199c0-9.319-7.555-16.875-16.875-16.875c-9.319,0-16.875,7.556-16.875,16.875
-			c0,9.32,7.556,16.875,16.875,16.875C447.146,215.875,454.701,208.32,454.701,199z M429.701,205.75l-4.375-4.375l12.5-12.499
-			l12.5,12.499l-4.375,4.375l-8.125-8.124L429.701,205.75z"/>
+		<path fill="#010101" d="M346.573,118.971c0,0-8.048,0.197-8.84,11.587c-0.796,11.39,1.188,46.097,1.188,46.097l6.567-0.007v3.64
+			c0,1.222,0.989,2.211,2.211,2.211h2.688c1.221,0,2.212-0.99,2.212-2.211v-3.649l32.03-0.039v3.688
+			c0,1.222,0.987,2.211,2.211,2.211h2.687c1.223,0,2.214-0.99,2.214-2.211v-3.696l5.716-0.005c0,0,1.986-34.706,1.192-46.097
+			c-0.794-11.391-8.841-11.587-8.841-11.587s-9.229-1.404-21.651-1.404C354.734,117.5,346.573,118.971,346.573,118.971z
+			 M356.441,119.378h24.279c1.3,0,2.351,0.972,2.351,2.167c0,1.198-1.052,2.17-2.351,2.17h-24.279c-1.299,0-2.352-0.972-2.352-2.17
+			C354.091,120.35,355.143,119.378,356.441,119.378z M348.929,167.772c-1.742,0-3.152-1.41-3.152-3.152s1.41-3.155,3.152-3.155
+			s3.152,1.413,3.152,3.155S350.671,167.772,348.929,167.772z M388.247,167.77c-1.739,0-3.152-1.408-3.152-3.153
+			c0-1.741,1.413-3.152,3.152-3.152c1.741,0,3.155,1.411,3.155,3.152C391.402,166.363,389.988,167.77,388.247,167.77z
+			 M393.227,150.854c0,2.595-2.103,4.697-4.697,4.697h-40.09c-2.596,0-4.697-2.103-4.697-4.697v-20.423
+			c0-2.595,2.102-4.697,4.697-4.697h40.09c2.595,0,4.697,2.103,4.697,4.697V150.854L393.227,150.854z"/>
+		<text transform="matrix(1 0 0 1 351.6475 150.373)" fill="#010101" font-family="'DejaVuSans'" font-size="26.0008">78</text>
+	</g>
+	<text transform="matrix(1 0 0 1 372.7388 105.4692)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 372.7388 74.4102)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 372.7388 43.3516)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 372.7388 271.9326)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 372.7388 240.8735)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 372.7388 209.8149)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<g>
+		<path fill="#010101" d="M471.869,118.971c0,0-8.049,0.197-8.842,11.587c-0.795,11.39,1.189,46.097,1.189,46.097l6.566-0.007v3.64
+			c0,1.222,0.99,2.211,2.213,2.211h2.688c1.221,0,2.211-0.99,2.211-2.211v-3.649l32.031-0.039v3.688
+			c0,1.222,0.988,2.211,2.211,2.211h2.688c1.221,0,2.213-0.99,2.213-2.211v-3.696l5.717-0.005c0,0,1.984-34.706,1.191-46.097
+			c-0.793-11.391-8.84-11.587-8.84-11.587s-9.23-1.404-21.652-1.404C480.029,117.5,471.869,118.971,471.869,118.971z
+			 M481.736,119.378h24.279c1.299,0,2.35,0.972,2.35,2.167c0,1.198-1.051,2.17-2.35,2.17h-24.279c-1.299,0-2.352-0.972-2.352-2.17
+			C479.385,120.35,480.438,119.378,481.736,119.378z M474.223,167.772c-1.742,0-3.152-1.41-3.152-3.152s1.41-3.155,3.152-3.155
+			s3.152,1.413,3.152,3.155S475.965,167.772,474.223,167.772z M513.541,167.77c-1.738,0-3.152-1.408-3.152-3.153
+			c0-1.741,1.414-3.152,3.152-3.152c1.742,0,3.156,1.411,3.156,3.152C516.697,166.363,515.283,167.77,513.541,167.77z
+			 M518.521,150.854c0,2.595-2.104,4.697-4.697,4.697h-40.09c-2.596,0-4.697-2.103-4.697-4.697v-20.423
+			c0-2.595,2.102-4.697,4.697-4.697h40.09c2.594,0,4.697,2.103,4.697,4.697V150.854L518.521,150.854z"/>
+		<text transform="matrix(1 0 0 1 470.3691 150.373)" fill="#010101" font-family="'DejaVuSans'" font-size="24.2216">151</text>
+	</g>
+	<text transform="matrix(1 0 0 1 498.0332 105.4692)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 498.0332 74.4102)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 498.0332 43.3516)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 498.0332 271.9326)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 498.0332 240.8735)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 498.0332 209.8149)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<g>
+		<path fill="#010101" d="M597.162,118.971c0,0-8.048,0.197-8.84,11.587c-0.796,11.39,1.189,46.097,1.189,46.097l6.566-0.007v3.64
+			c0,1.222,0.989,2.211,2.212,2.211h2.688c1.222,0,2.212-0.99,2.212-2.211v-3.649l32.03-0.039v3.688
+			c0,1.222,0.988,2.211,2.212,2.211h2.687c1.222,0,2.213-0.99,2.213-2.211v-3.696l5.717-0.005c0,0,1.985-34.706,1.191-46.097
+			c-0.793-11.391-8.84-11.587-8.84-11.587s-9.229-1.404-21.652-1.404C605.324,117.5,597.162,118.971,597.162,118.971z
+			 M607.03,119.378h24.279c1.3,0,2.351,0.972,2.351,2.167c0,1.198-1.052,2.17-2.351,2.17H607.03c-1.299,0-2.352-0.972-2.352-2.17
+			C604.68,120.35,605.731,119.378,607.03,119.378z M599.518,167.772c-1.742,0-3.152-1.41-3.152-3.152s1.41-3.155,3.152-3.155
+			s3.152,1.413,3.152,3.155S601.26,167.772,599.518,167.772z M638.836,167.77c-1.739,0-3.152-1.408-3.152-3.153
+			c0-1.741,1.413-3.152,3.152-3.152c1.741,0,3.155,1.411,3.155,3.152C641.991,166.363,640.577,167.77,638.836,167.77z
+			 M643.816,150.854c0,2.595-2.104,4.697-4.698,4.697h-40.09c-2.596,0-4.697-2.103-4.697-4.697v-20.423
+			c0-2.595,2.102-4.697,4.697-4.697h40.09c2.595,0,4.698,2.103,4.698,4.697V150.854L643.816,150.854z"/>
+		<text transform="matrix(1 0 0 1 593.9668 150.3999)" fill="#010101" font-family="'DejaVuSans'" font-size="26">148</text>
+	</g>
+	<text transform="matrix(1 0 0 1 623.3281 105.4692)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 623.3281 74.4102)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 623.3281 43.3516)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 623.3281 271.9326)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 623.3281 240.8735)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 623.3281 209.8149)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<g>
+		<path fill="#010101" d="M744.15,117.5l-18.018,1.625c-1.457,0-2.64,0.918-2.64,2.052l1.26,40.665c0,1.134,1.183,2.051,2.64,2.051
+			l6.562,0.488L721.115,182.5h4.733l11.415-15.925l13.549-0.021l11.578,15.945h5.119l-12.838-18.119l6.561-0.488
+			c1.458,0,2.641-0.917,2.641-2.051l1.26-40.665c0-1.134-1.182-2.052-2.64-2.052L744.15,117.5z M729.302,122.273h30.022
+			c0.989,0,1.787,0.795,1.787,1.768v18.505c0,0.974-0.798,1.767-1.787,1.767h-30.022c-0.989,0-1.788-0.793-1.788-1.767V124.04
+			C727.514,123.067,728.312,122.273,729.302,122.273z M733.71,151.098c2.165,0,3.921,1.754,3.921,3.919
+			c0,2.166-1.756,3.92-3.921,3.92s-3.92-1.755-3.92-3.92C729.79,152.852,731.544,151.098,733.71,151.098z M754.51,151.098
+			c2.165,0,3.921,1.754,3.921,3.919c0,2.166-1.756,3.92-3.921,3.92c-2.166,0-3.92-1.755-3.92-3.92
+			C750.59,152.852,752.344,151.098,754.51,151.098z M736.939,172.14c-0.275,0-0.508,0.284-0.508,0.63v0.386
+			c0,0.347,0.232,0.61,0.508,0.61h14.746c0.275,0,0.508-0.263,0.508-0.61v-0.386c0-0.347-0.232-0.63-0.508-0.63H736.939z
+			 M732.125,179.087c-0.454,0-0.832,0.283-0.832,0.63v0.386c0,0.346,0.378,0.63,0.832,0.63H756.5c0.456,0,0.833-0.284,0.833-0.63
+			v-0.386c0-0.347-0.377-0.63-0.833-0.63H732.125z"/>
+		<text transform="matrix(1 0 0 1 731.5273 137.8105)" fill="#010101" font-family="'DejaVuSans'" font-size="15.6">red</text>
+	</g>
+	<text transform="matrix(1 0 0 1 748.8613 105.4692)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 748.8613 74.4102)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 748.8613 43.3516)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 748.3848 271.9326)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 748.8613 240.8735)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<text transform="matrix(1 0 0 1 748.8613 209.8149)" font-family="'DejaVuSans'" font-size="16">m</text>
+	<g>
+		<path fill="#010101" d="M43.579,225c0,12.426,10.074,22.5,22.5,22.5s22.5-10.074,22.5-22.5c0-12.427-10.074-22.5-22.5-22.5
+			S43.579,212.573,43.579,225z M76.913,216l5.833,5.834l-16.667,16.665l-16.666-16.665L55.246,216l10.833,10.832L76.913,216z"/>
 	</g>
 	<g>
-		<path fill="#010101" d="M437.826,78.125c-9.319,0-16.875,7.555-16.875,16.875c0,9.319,7.556,16.875,16.875,16.875
-			c9.32,0,16.875-7.556,16.875-16.875C454.701,85.68,447.146,78.125,437.826,78.125z M437.826,96.374l8.125-8.124l4.375,4.375
-			l-12.5,12.499l-12.5-12.499l4.375-4.375L437.826,96.374z"/>
-	</g>
-
-	<path fill="#010101" d="M201.279,118.971c0,0-8.048,0.197-8.84,11.587c-0.796,11.39,1.189,46.097,1.189,46.097l6.567-0.007v3.64
-		c0,1.222,0.99,2.211,2.211,2.211h2.688c1.221,0,2.211-0.99,2.211-2.211v-3.649l32.03-0.039v3.688c0,1.222,0.988,2.211,2.211,2.211
-		h2.687c1.222,0,2.214-0.99,2.214-2.211v-3.696l5.716-0.005c0,0,1.986-34.706,1.192-46.097c-0.793-11.391-8.84-11.587-8.84-11.587
-		s-9.229-1.404-21.651-1.404C209.44,117.5,201.279,118.971,201.279,118.971z M211.147,119.378h24.279c1.3,0,2.351,0.972,2.351,2.167
-		c0,1.198-1.051,2.17-2.351,2.17h-24.279c-1.299,0-2.352-0.972-2.352-2.17C208.796,120.35,209.848,119.378,211.147,119.378z
-		 M203.634,167.772c-1.742,0-3.152-1.41-3.152-3.152c0-1.742,1.41-3.155,3.152-3.155c1.742,0,3.152,1.413,3.152,3.155
-		C206.786,166.362,205.376,167.772,203.634,167.772z M242.952,167.77c-1.739,0-3.152-1.408-3.152-3.153
-		c0-1.741,1.413-3.152,3.152-3.152c1.741,0,3.155,1.411,3.155,3.152C246.107,166.363,244.693,167.77,242.952,167.77z
-		 M247.932,150.854c0,2.595-2.103,4.697-4.698,4.697h-40.09c-2.596,0-4.697-2.103-4.697-4.697v-20.423
-		c0-2.595,2.102-4.697,4.697-4.697h40.09c2.595,0,4.698,2.103,4.698,4.697V150.854L247.932,150.854z"/>
-	<text transform="matrix(1 0 0 1 206.3535 150.373)" fill="#010101" font-family="'DejaVuSans'" font-size="26.0008">36</text>
-	<text transform="matrix(1 0 0 1 227.4443 105.4688)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 227.4443 74.4102)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 227.4443 43.3516)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 227.4443 271.9326)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 227.4443 240.873)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 227.4443 209.8145)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<path fill="#010101" d="M188.755,199c0-9.319-7.555-16.875-16.875-16.875c-9.319,0-16.875,7.556-16.875,16.875
-		c0,9.32,7.556,16.875,16.875,16.875C181.2,215.875,188.755,208.32,188.755,199z M163.754,205.75l-4.375-4.375l12.5-12.499
-		l12.5,12.499l-4.375,4.375l-8.125-8.124L163.754,205.75z"/>
-	<path fill="#010101" d="M171.88,78.125c-9.319,0-16.875,7.555-16.875,16.875c0,9.319,7.556,16.875,16.875,16.875
-		c9.32,0,16.875-7.556,16.875-16.875C188.755,85.68,181.2,78.125,171.88,78.125z M171.88,96.374l8.125-8.124l4.375,4.375
-		l-12.5,12.499l-12.5-12.499l4.375-4.375L171.88,96.374z"/>
-	<g>
-		<path fill="#010101" d="M336.885,118.971c0,0-8.048,0.197-8.84,11.587c-0.796,11.39,1.188,46.097,1.188,46.097l6.567-0.007v3.64
-			c0,1.222,0.989,2.211,2.211,2.211h2.688c1.221,0,2.212-0.99,2.212-2.211v-3.649l32.03-0.039v3.688c0,1.222,0.987,2.211,2.211,2.211
-			h2.687c1.223,0,2.214-0.99,2.214-2.211v-3.696l5.716-0.005c0,0,1.986-34.706,1.192-46.097c-0.795-11.391-8.841-11.587-8.841-11.587
-			s-9.229-1.404-21.651-1.404C345.045,117.5,336.885,118.971,336.885,118.971z M346.752,119.378h24.279
-			c1.3,0,2.351,0.972,2.351,2.167c0,1.198-1.052,2.17-2.351,2.17h-24.279c-1.299,0-2.352-0.972-2.352-2.17
-			C344.402,120.35,345.455,119.378,346.752,119.378z M339.241,167.772c-1.742,0-3.152-1.41-3.152-3.152
-			c0-1.742,1.41-3.155,3.152-3.155c1.742,0,3.152,1.413,3.152,3.155C342.393,166.362,340.982,167.772,339.241,167.772z
-			 M378.559,167.77c-1.739,0-3.152-1.408-3.152-3.153c0-1.741,1.413-3.152,3.152-3.152c1.741,0,3.155,1.411,3.155,3.152
-			C381.713,166.363,380.299,167.77,378.559,167.77z M383.539,150.854c0,2.595-2.103,4.697-4.697,4.697h-40.09
-			c-2.596,0-4.697-2.103-4.697-4.697v-20.423c0-2.595,2.102-4.697,4.697-4.697h40.09c2.595,0,4.697,2.103,4.697,4.697V150.854
-			L383.539,150.854z"/>
-		<text transform="matrix(1 0 0 1 341.959 150.373)" fill="#010101" font-family="'DejaVuSans'" font-size="26.0008">78</text>
-	</g>
-	<text transform="matrix(1 0 0 1 363.0503 105.4688)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 363.0503 74.4102)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 363.0503 43.3516)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 363.0503 271.9326)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 363.0503 240.873)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 363.0503 209.8145)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<g>
-		<path fill="#010101" d="M302.016,182.125c-9.32,0-16.875,7.556-16.875,16.875s7.555,16.874,16.875,16.874
-			c9.32,0,16.875-7.555,16.875-16.874S311.336,182.125,302.016,182.125z M308.766,207.125l-4.375,4.375L291.892,199l12.499-12.5
-			l4.375,4.375L300.642,199L308.766,207.125z"/>
+		<path fill="#010101" d="M126.255,247.5c12.426,0,22.5-10.074,22.5-22.5s-10.074-22.499-22.5-22.499
+			c-12.427,0-22.5,10.073-22.5,22.499S113.828,247.5,126.255,247.5z M117.255,214.166l5.834-5.833L139.754,225l-16.665,16.666
+			l-5.834-5.833L128.087,225L117.255,214.166z"/>
 	</g>
 	<g>
-		<path fill="#010101" d="M302.016,111.875c9.319,0,16.875-7.556,16.875-16.875s-7.556-16.874-16.875-16.874
-			c-9.32,0-16.875,7.555-16.875,16.874S292.695,111.875,302.016,111.875z M295.266,86.875l4.375-4.375L312.14,95l-12.499,12.5
-			l-4.375-4.375L303.39,95L295.266,86.875z"/>
+		<path fill="#010101" d="M66.079,97.5c12.426,0,22.5-10.073,22.5-22.5c0-12.426-10.074-22.5-22.5-22.5s-22.5,10.074-22.5,22.5
+			C43.579,87.427,53.653,97.5,66.079,97.5z M66.079,73.168L55.246,84l-5.833-5.834l16.666-16.665l16.667,16.665L76.913,84
+			L66.079,73.168z"/>
 	</g>
-
 	<g>
-		<path fill="#010101" d="M600.332,118.971c0,0-8.048,0.197-8.84,11.587c-0.796,11.39,1.188,46.097,1.188,46.097l6.566-0.007v3.64
-			c0,1.222,0.989,2.211,2.212,2.211h2.688c1.224,0,2.212-0.99,2.212-2.211v-3.649l32.03-0.039v3.688c0,1.222,0.988,2.211,2.212,2.211
-			h2.688c1.222,0,2.213-0.99,2.213-2.211v-3.696l5.717-0.005c0,0,1.985-34.706,1.191-46.097c-0.794-11.391-8.842-11.587-8.842-11.587
-			s-9.229-1.404-21.65-1.404C608.494,117.5,600.332,118.971,600.332,118.971z M610.2,119.378h24.278c1.301,0,2.352,0.972,2.352,2.167
-			c0,1.198-1.052,2.17-2.352,2.17H610.2c-1.299,0-2.354-0.972-2.354-2.17C607.85,120.35,608.901,119.378,610.2,119.378z
-			 M602.688,167.772c-1.74,0-3.15-1.41-3.15-3.152c0-1.742,1.41-3.155,3.15-3.155c1.742,0,3.152,1.413,3.152,3.155
-			C605.84,166.362,604.43,167.772,602.688,167.772z M642.006,167.77c-1.739,0-3.152-1.408-3.152-3.153
-			c0-1.741,1.413-3.152,3.152-3.152c1.741,0,3.155,1.411,3.155,3.152C645.161,166.363,643.747,167.77,642.006,167.77z
-			 M646.986,150.854c0,2.595-2.104,4.697-4.698,4.697h-40.09c-2.598,0-4.697-2.103-4.697-4.697v-20.423
-			c0-2.595,2.102-4.697,4.697-4.697h40.09c2.595,0,4.698,2.103,4.698,4.697V150.854L646.986,150.854z"/>
-		<text transform="matrix(1 0 0 1 597.1367 150.4004)" fill="#010101" font-family="'DejaVuSans'" font-size="26">148</text>
+		<path fill="#010101" d="M126.255,52.5c-12.426,0-22.5,10.074-22.5,22.5s10.074,22.499,22.5,22.499
+			c12.427,0,22.5-10.073,22.5-22.499S138.682,52.5,126.255,52.5z M135.255,85.834l-5.834,5.833L112.756,75l16.665-16.666
+			l5.834,5.833L124.423,75L135.255,85.834z"/>
 	</g>
-	<text transform="matrix(1 0 0 1 626.498 105.4688)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 626.498 74.4102)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 626.498 43.3516)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 626.498 271.9326)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 626.498 240.873)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 626.498 209.8145)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<g>
-		<path fill="#010101" d="M586.925,199c0-9.319-7.555-16.875-16.875-16.875c-9.319,0-16.875,7.556-16.875,16.875
-			c0,9.32,7.557,16.875,16.875,16.875C579.37,215.875,586.925,208.32,586.925,199z M561.924,205.75l-4.374-4.375l12.5-12.499
-			l12.499,12.499l-4.374,4.375l-8.125-8.124L561.924,205.75z"/>
-	</g>
-	<path fill="#010101" d="M570.05,78.125c-9.319,0-16.875,7.555-16.875,16.875c0,9.319,7.557,16.875,16.875,16.875
-		c9.32,0,16.875-7.556,16.875-16.875C586.925,85.68,579.37,78.125,570.05,78.125z M570.05,96.374l8.125-8.124l4.374,4.375
-		l-12.499,12.499l-12.5-12.499l4.374-4.375L570.05,96.374z"/>
-
-	<g>
-		<path fill="#010101" d="M758.15,117.5l-18.02,1.625c-1.457,0-2.64,0.918-2.64,2.052l1.26,40.665c0,1.134,1.183,2.051,2.64,2.051
-			l6.562,0.488L735.115,182.5h4.731l11.415-15.925l13.549-0.021l11.578,15.945h5.119L768.67,164.38l6.562-0.488
-			c1.457,0,2.641-0.917,2.641-2.051l1.26-40.665c0-1.134-1.182-2.052-2.64-2.052L758.15,117.5z M743.302,122.273h30.022
-			c0.987,0,1.787,0.795,1.787,1.768v18.505c0,0.974-0.8,1.767-1.787,1.767h-30.022c-0.989,0-1.788-0.793-1.788-1.767V124.04
-			C741.514,123.067,742.312,122.273,743.302,122.273z M747.71,151.098c2.165,0,3.921,1.754,3.921,3.919
-			c0,2.166-1.756,3.92-3.921,3.92s-3.92-1.755-3.92-3.92S745.544,151.098,747.71,151.098z M768.51,151.098
-			c2.165,0,3.921,1.754,3.921,3.919c0,2.166-1.756,3.92-3.921,3.92c-2.166,0-3.92-1.755-3.92-3.92S766.344,151.098,768.51,151.098z
-			 M750.939,172.14c-0.275,0-0.51,0.284-0.51,0.63v0.386c0,0.347,0.232,0.61,0.51,0.61h14.744c0.275,0,0.51-0.263,0.51-0.61v-0.386
-			c0-0.347-0.232-0.63-0.51-0.63H750.939z M746.125,179.087c-0.454,0-0.832,0.283-0.832,0.63v0.386c0,0.346,0.378,0.63,0.832,0.63
-			H770.5c0.456,0,0.833-0.284,0.833-0.63v-0.386c0-0.347-0.377-0.63-0.833-0.63H746.125z"/>
-		<text transform="matrix(1 0 0 1 745.5273 137.8105)" fill="#010101" font-family="'DejaVuSans'" font-size="15.6">red</text>
-	</g>
-	<text transform="matrix(1 0 0 1 762.8613 105.4688)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 762.8613 74.4102)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 762.8613 43.3516)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 762.3848 271.9326)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 762.8613 240.873)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<text transform="matrix(1 0 0 1 762.8613 209.8145)" font-family="'DejaVuSans'" font-size="16">m</text>
-	<g>
-		<path fill="#010101" d="M723.755,199c0-9.319-7.555-16.875-16.875-16.875c-9.319,0-16.875,7.556-16.875,16.875
-			c0,9.32,7.556,16.875,16.875,16.875C716.2,215.875,723.755,208.32,723.755,199z M698.754,205.75l-4.374-4.375l12.5-12.499
-			l12.499,12.499l-4.374,4.375l-8.125-8.124L698.754,205.75z"/>
-	</g>
-	<path fill="#010101" d="M706.88,78.125c-9.319,0-16.875,7.555-16.875,16.875c0,9.319,7.556,16.875,16.875,16.875
-		c9.32,0,16.875-7.556,16.875-16.875C723.755,85.68,716.2,78.125,706.88,78.125z M706.88,96.374l8.125-8.124l4.374,4.375
-		l-12.499,12.499l-12.5-12.499l4.374-4.375L706.88,96.374z"/>
 </g>
 
 
-<g id="_x35_dayForecast" display="none">
+<g id="_x35_dayForecast" display="DISP5DAY">
 	<text transform="matrix(1 0 0 1 331 339)" display="inline" font-family="'DejaVuSans'" font-size="24">DAY_THREE</text>
 	<text transform="matrix(1 0 0 1 487 339)" display="inline" font-family="'DejaVuSans'" font-size="24">DAY_FOUR</text>
 	<text transform="matrix(1 0 0 1 643 339)" display="inline" font-family="'DejaVuSans'" font-size="24">DAY_FIVE</text>
@@ -374,7 +348,7 @@
 		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="166" y1="312.5" x2="166" y2="587.5"/>
 	</g>
 </g>
-<g id="_x35_dayForeStatic" display="none">
+<g id="_x35_dayForeStatic" display="DISP5DAY">
 	<text transform="matrix(1 0 0 1 19 339)" display="inline" font-family="'DejaVuSans'" font-size="24">Today</text>
 	<text transform="matrix(1 0 0 1 175 339)" display="inline" font-family="'DejaVuSans'" font-size="24">Tomorrow</text>
 	<text transform="matrix(1 0 0 1 101 500.6016)" display="inline" font-family="'DejaVuSans'" font-size="44">°F</text>
@@ -721,7 +695,7 @@
 		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="270" y1="312.5" x2="270" y2="587.5"/>
 	</g>
 </g>
-<g id="_x31_2hrForeDynamicVars" display="none">
+<g id="_x31_2hrForeDynamicVars" display="DISP12HOUR">
 	<g display="inline">
 		<path fill="#010101" d="M32.181,386.602v6.821h1.786v-6.821H32.181z M24.286,388.548l-1.517,0.946l3.606,5.787l1.519-0.947
 			L24.286,388.548z M41.966,388.727l-3.305,5.965l1.571,0.875l3.305-5.965L41.966,388.727z M16.519,395.227l-0.875,1.571
@@ -1037,7 +1011,7 @@
 		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="270" y1="312.5" x2="270" y2="587.5"/>
 	</g>
 </g>
-<g id="_x31_2hrForeStatic" display="none">
+<g id="_x31_2hrForeStatic" display="DISP12HOUR">
 	<text transform="matrix(1 0 0 1 52 337.6016)" display="inline" font-family="'DejaVuSans'" font-size="16">h</text>
 	<text transform="matrix(1 0 0 1 50.4043 366.6016)" display="inline" font-family="'DejaVuSans'" font-size="14">°F</text>
 	<text transform="matrix(1 0 0 1 52.7544 445.6016)" display="inline" font-family="'DejaVuSans'" font-size="14">%</text>
