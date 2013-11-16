@@ -74,9 +74,9 @@ icon = fIcon.readline()
 fIcon.close()
 output = output.replace('CURR_COND_ICON',icon)
 
-#get localtime
+#get localtime, add a minute to align better after synchronization
 lTime = time.localtime()
-lTimeF = str(lTime.tm_hour)+":"+str(lTime.tm_min)
+lTimeF = str(lTime.tm_hour)+":"+str(lTime.tm_min+1)
 output = output.replace('TIME',str(lTimeF))
 
 output = output.replace('DISP_CURR',show)
