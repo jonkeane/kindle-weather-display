@@ -58,6 +58,7 @@ CURRWIND = int(round(parsed_json['current_observation']['wind_mph']))
 WIND_DEGS = parsed_json['current_observation']['wind_degrees']
 CURRHUM = parsed_json['current_observation']['relative_humidity']
 CURR_COND_ICON = parsed_json['current_observation']['icon']
+CURR_COND_ICON = "mostlysunny"
 CURR_COND_ICON_url = 'weather-icons/' + CURR_COND_ICON + '.svg'
 
 # Insert icons and temperatures
@@ -67,11 +68,17 @@ output = output.replace('CURRWIND',str(CURRWIND))
 output = output.replace('CURRHUM',str(CURRHUM.strip('%')))
 output = output.replace('WIND_DEGS',str(WIND_DEGS))
 
-# Grad the icon for the condition
-fIcon = codecs.open(CURR_COND_ICON_url ,'r', encoding='utf-8')
-fIcon.readline()
-icon = fIcon.readline()
-fIcon.close()
+# Grab the icon for the condition
+if os.path.isfile(CURR_COND_ICON_url):
+    fIcon = codecs.open(CURR_COND_ICON_url ,'r', encoding='utf-8')
+    fIcon.readline()
+    icon = fIcon.readline()
+    fIcon.close()
+else:
+    fIcon = codecs.open("weather-icons/unknown.svg" ,'r', encoding='utf-8')
+    fIcon.readline()
+    icon = fIcon.readline()
+    fIcon.close()        
 output = output.replace('CURR_COND_ICON',icon)
 
 #get localtime, add a minute to align better after synchronization
