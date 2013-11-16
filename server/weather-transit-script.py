@@ -100,7 +100,7 @@ codecs.open('weather-script-output-current.svg', 'w', encoding='utf-8').write(ou
 
 
 
-########## 24hour ###########
+########## hourly ###########
 # Open SVG to process
 output = codecs.open('weather-transit-preprocess.svg', 'r', encoding='utf-8').read()
 
@@ -108,7 +108,7 @@ output = codecs.open('weather-transit-preprocess.svg', 'r', encoding='utf-8').re
 show="inline"
 hide="none"
 
-### Deal with the 24hourfile file
+### Deal with the hourly file
 # check the currenConditions file to see if it's older than 5 minutes
 if fileChecker("localData/hourly.json", 3600) == "create":
     weatherGrabber(type="hourly", path="localData/hourly.json")
@@ -190,6 +190,6 @@ output = output.replace('DISP5DAY',hide)
 output = output.replace('DISP12HOUR',show)
 
 # Write output
-codecs.open('weather-script-output-24hour.svg', 'w', encoding='utf-8').write(output)
+codecs.open('weather-script-output-hourly.svg', 'w', encoding='utf-8').write(output)
 
 
