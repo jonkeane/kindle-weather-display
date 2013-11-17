@@ -1,2 +1,6 @@
-From:
+A kindle information display that shows transit arrival times from the CTA, as well as weather information from wunderground.
+
+Has multiple views for the weather: current conditions, hourly forecast for 12 hours, and a 5 day forecast.
+
+Based largely on the kindle-weather-display from:
 http://www.mpetroff.net/archives/2012/09/14/kindle-weather-display/
