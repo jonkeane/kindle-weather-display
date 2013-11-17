@@ -58,7 +58,6 @@ CURRWIND = int(round(parsed_json['current_observation']['wind_mph']))
 WIND_DEGS = parsed_json['current_observation']['wind_degrees']
 CURRHUM = parsed_json['current_observation']['relative_humidity']
 CURR_COND_ICON = parsed_json['current_observation']['icon']
-CURR_COND_ICON = "mostlysunny"
 CURR_COND_ICON_url = 'weather-icons/' + CURR_COND_ICON + '.svg'
 
 # Insert icons and temperatures
@@ -127,9 +126,6 @@ winds_degs = [int(parsed_json['hourly_forecast'][x]['wdir']['degrees']) for x in
 humids = [int(parsed_json['hourly_forecast'][x]['humidity']) for x in range(12)]
 percips = [int(parsed_json['hourly_forecast'][x]['pop']) for x in range(12)]
 cond_icons = [parsed_json['hourly_forecast'][x]['icon'] for x in range(12)]
-
-#CURR_COND_ICON = "mostlysunny"
-#CURR_COND_ICON_url = 'weather-icons/' + CURR_COND_ICON + '.svg'
 
 # Insert icons and temperatures
 h = 1
