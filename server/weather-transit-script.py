@@ -119,13 +119,13 @@ parsed_json = json.loads(json_string)
 fCurrCond.close()
 
 # parse out the dynamic variables
-hours = [int(parsed_json['hourly_forecast'][x]['FCTTIME']['hour']) for x in range(12)]
-temps = [int(parsed_json['hourly_forecast'][x]['temp']['english']) for x in range(12)]
-winds = [int(parsed_json['hourly_forecast'][x]['wspd']['english']) for x in range(12)]
-winds_degs = [int(parsed_json['hourly_forecast'][x]['wdir']['degrees']) for x in range(12)]
-humids = [int(parsed_json['hourly_forecast'][x]['humidity']) for x in range(12)]
-percips = [int(parsed_json['hourly_forecast'][x]['pop']) for x in range(12)]
-cond_icons = [parsed_json['hourly_forecast'][x]['icon'] for x in range(12)]
+hours = [int(parsed_json['hourly_forecast'][x]['FCTTIME']['hour']) for x in range(1,13)]
+temps = [int(parsed_json['hourly_forecast'][x]['temp']['english']) for x in range(1,13)]
+winds = [int(parsed_json['hourly_forecast'][x]['wspd']['english']) for x in range(1,13)]
+winds_degs = [int(parsed_json['hourly_forecast'][x]['wdir']['degrees']) for x in range(1,13)]
+humids = [int(parsed_json['hourly_forecast'][x]['humidity']) for x in range(1,13)]
+percips = [int(parsed_json['hourly_forecast'][x]['pop']) for x in range(1,13)]
+cond_icons = [parsed_json['hourly_forecast'][x]['icon'] for x in range(1,13)]
 
 # Insert icons and temperatures
 h = 1
