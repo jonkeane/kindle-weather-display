@@ -57,9 +57,9 @@ def addTransit(output, path="localData/busPredictions.xml"):
     root = parsed_xml.getroot()
 
     buses = {"sb36":  [], "nb36":  [], "wb78":  [], "eb78":  [], "sb151":  [], "nb151":  [], "sb148":  [], "nb148":  [], "nbred":  [], "sbred":  []}
-
+    arrivals = {"sb36":  [], "nb36":  [], "wb78":  [], "eb78":  [], "sb151":  [], "nb151":  [], "sb148":  [], "nb148":  [], "nbred":  [], "sbred":  []}
     bounds = {"Northbound": "nb", "Southbound": "sb", "Eastbound": "eb", "Westbound": "wb"}
-
+    busPlaces = {"36":"BUS1" , "78": "BUS2" , "151": "BUS3", "148": "BUS4", "red": "BUS5"}
     seenVIDs = []
 
     for child in root:
@@ -72,11 +72,20 @@ def addTransit(output, path="localData/busPredictions.xml"):
                 try:
                     buses[route].append(child.findall('prdtm')[0].text)
                 except KeyError:
-                    pass            
-        
-
-    busPlaces = {"36":"BUS1" , "78": "BUS2" , "151": "BUS3", "148": "BUS4", "red": "BUS5"}
-
+                    pass
+                    
+    #make a dictionary of arrival times
+    for bus in arrivals.keys():     
+        for indBus in buses[bus]:
+            arrival = datetime.datetime.strptime(indBus, "%Y%m%d %H:%M")-datetime.datetime.fromtimestamp(time.mktime(time.localtime()))            
+            # subtract a minute from the minutes until arrival
+            arrival = arrival-datetime.timedelta(seconds=60)
+            # ensure that arrival times are longer than 1 minute
+            if arrival>datetime.timedelta(seconds=60):
+                # extract the minutes
+                arrival = str(arrival).split(":")[1]  
+                arrivals[bus].append(arrival)
+            
     for bus in buses.keys():
         # grab the place identifier
         busPlace = busPlaces[bus[2:]]
@@ -84,18 +93,10 @@ def addTransit(output, path="localData/busPredictions.xml"):
         if bus[:2] == "nb" or  bus[:2] == "wb":
             busPlace = busPlace+"_D"
         else:
-            busPlace = busPlace+"_U"
+            busPlace = busPlace+"_U"        
         for n in range (3):
             try:
-                arrival = datetime.datetime.strptime(buses[bus][n], "%Y%m%d %H:%M")-datetime.datetime.fromtimestamp(time.mktime(time.localtime()))
-                # subtract a minute from the minutes until arrival
-                arrival = arrival-datetime.timedelta(seconds=60)
-                # ensure that times are not negative
-                if arrival<datetime.timedelta(seconds=0):
-                    arrival = datetime.timedelta(seconds=0)
-                # extract the minutes
-                arrival = str(arrival).split(":")[1]
-                
+                arrival = arrivals[bus][n]
                 # clean the arrival time
                 if arrival == "00":
                     arrival = "0" # due does not fit with the current setup.
