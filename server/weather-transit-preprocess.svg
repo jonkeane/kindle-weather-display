@@ -43,23 +43,23 @@
 	</g>
 	
 
-	<text transform="matrix(1 0 0 1 516.521 382.5)" font-family="'DejaVuSans'" style="text-anchor:end;"  font-size="60">CURRTEMP</text>
+	<text transform="matrix(1 0 0 1 557.3808 414.1514)" font-family="'DejaVuSans'" style="text-anchor:end;"  font-size="126">CURRTEMP</text>
 	
 	<g id="svgcurrwindicon" transform="translate(648.267 440.4) scale(0.75) rotate(WIND_DEGS, 50, 50)">
 		<path d="M49.999,0c-27.614,0-50,22.385-50,50c0,27.613,22.386,50,50,50s50-22.387,50-50C99.999,22.384,77.611,0,49.999,0z
 			 M49.998,54.072L74.072,30l12.963,12.963L49.998,79.998L12.961,42.964L25.924,30L49.998,54.072z"/>
 	</g>
 	<text transform="matrix(1 0 0 1 671.2121 544.5)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="30">CURRWIND</text>
-	<text transform="matrix(1 0 0 1 470.261 544.5)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="30">CURRHUM</text>
-	<text transform="matrix(1 0 0 1 705.5256 418.248)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="30">CURRFEELS</text>
+	<text transform="matrix(1 0 0 1 542.2912 564.5)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="30">CURRHUM</text>
+	<text transform="matrix(1 0 0 1 462.7391 508.8926)" font-family="'DejaVuSans'" style="text-anchor:end;" font-size="50">CURRFEELS</text>
 </g>
 <g id="currentStatic" display="DISP_CURR">
-	<text transform="matrix(1 0 0 1 512 368.5)" font-family="'DejaVuSans'" font-size="40">°F</text>
+	<text transform="matrix(1 0 0 1 547.836 384.5908)" font-family="'DejaVuSans'" font-size="84">°F</text>
 	<text transform="matrix(1 0 0 1 671.0381 544.5)" font-family="'DejaVuSans'" font-size="20">mph</text>
-	<text transform="matrix(1 0 0 1 415 512.5)" font-family="'DejaVuSans'" font-size="20">Humidity</text>
-	<text transform="matrix(1 0 0 1 470 544.5)" font-family="'DejaVuSans'" font-size="20">%</text>
-	<text transform="matrix(1 0 0 1 704.2646 411.248)" font-family="'DejaVuSans'" font-size="20">°F</text>
-	<text transform="matrix(1 0 0 1 563.2646 417.75)" font-family="'DejaVuSans'" font-size="20">feels like</text>
+	<text transform="matrix(1 0 0 1 402.2247 564.5)" font-family="'DejaVuSans'" font-size="20">Humidity</text>
+	<text transform="matrix(1 0 0 1 542.0303 564.5)" font-family="'DejaVuSans'" font-size="20">%</text>
+	<text transform="matrix(1 0 0 1 460.668 497.3887)" font-family="'DejaVuSans'" font-size="32">°F</text>
+	<text transform="matrix(1 0 0 1 402.2247 465.291)" font-family="'DejaVuSans'" font-size="22">feels like</text>
 </g>
 
 <g id="transitDynamic" display="none">
