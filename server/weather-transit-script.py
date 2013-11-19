@@ -60,11 +60,17 @@ def addTransit(output, path="localData/busPredictions.xml"):
 
     bounds = {"Northbound": "nb", "Southbound": "sb", "Eastbound": "eb", "Westbound": "wb"}
 
+    seenVIDs = []
+
     for child in root:
         if child.tag == "prd":
-            route = ''.join([bounds[child.findall('rtdir')[0].text],child.findall('rt')[0].text])
-            buses[route].append(child.findall('prdtm')[0].text)
-            ctaSystime = child.findall('tmstmp')[0].text
+            if child.findall('vid')[0].text not in seenVIDs:
+                seenVIDs.append(child.findall('vid')[0].text)
+                
+                route = ''.join([bounds[child.findall('rtdir')[0].text],child.findall('rt')[0].text])
+                buses[route].append(child.findall('prdtm')[0].text)
+                ctaSystime = child.findall('tmstmp')[0].text
+            
         
 
     busPlaces = {"36":"BUS1" , "78": "BUS2" , "151": "BUS3", "148": "BUS4", "red": "BUS5"}
@@ -80,9 +86,9 @@ def addTransit(output, path="localData/busPredictions.xml"):
         for n in range (3):
             try:
                 arrival = datetime.datetime.strptime(buses[bus][n].split(' ')[1], "%H:%M")-datetime.datetime.strptime(ctaSystime.split(' ')[1], "%H:%M")
-                print(arrival)
+                # subtract a minute from the minutes until arrival
                 arrival = arrival-datetime.timedelta(seconds=60)
-                print(arrival)
+                # extract the minutes
                 arrival = str(arrival).split(":")[1]
                 output = output.replace(busPlace+str(n+1)+'_DISP', show)
                 output = output.replace(busPlace+str(n+1), arrival)
