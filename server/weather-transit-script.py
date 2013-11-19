@@ -68,7 +68,10 @@ def addTransit(output, path="localData/busPredictions.xml"):
                 seenVIDs.append(child.findall('vid')[0].text)
                 
                 route = ''.join([bounds[child.findall('rtdir')[0].text],child.findall('rt')[0].text])
-                buses[route].append(child.findall('prdtm')[0].text)
+                try:
+                    buses[route].append(child.findall('prdtm')[0].text)
+                except KeyError:
+                    pass
                 ctaSystime = child.findall('tmstmp')[0].text
             
         
