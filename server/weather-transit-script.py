@@ -64,16 +64,15 @@ def addTransit(output, path="localData/busPredictions.xml"):
 
     for child in root:
         if child.tag == "prd":
-            if child.findall('vid')[0].text not in seenVIDs:
-                seenVIDs.append(child.findall('vid')[0].text)
+            dupCheck = ''.join([bounds[child.findall('rtdir')[0].text],child.findall('rt')[0].text,child.findall('vid')[0].text,child.findall('prdtm')[0].text])
+            if dupCheck not in seenVIDs:
+                seenVIDs.append(dupCheck)
                 
                 route = ''.join([bounds[child.findall('rtdir')[0].text],child.findall('rt')[0].text])
                 try:
                     buses[route].append(child.findall('prdtm')[0].text)
                 except KeyError:
-                    pass
-                ctaSystime = child.findall('tmstmp')[0].text
-            
+                    pass            
         
 
     busPlaces = {"36":"BUS1" , "78": "BUS2" , "151": "BUS3", "148": "BUS4", "red": "BUS5"}
@@ -88,15 +87,18 @@ def addTransit(output, path="localData/busPredictions.xml"):
             busPlace = busPlace+"_U"
         for n in range (3):
             try:
-                arrival = datetime.datetime.strptime(buses[bus][n].split(' ')[1], "%H:%M")-datetime.datetime.strptime(ctaSystime.split(' ')[1], "%H:%M")
+                arrival = datetime.datetime.strptime(buses[bus][n], "%Y%m%d %H:%M")-datetime.datetime.fromtimestamp(time.mktime(time.localtime()))
                 # subtract a minute from the minutes until arrival
                 arrival = arrival-datetime.timedelta(seconds=60)
+                # ensure that times are not negative
+                if arrival<datetime.timedelta(seconds=0):
+                    arrival = datetime.timedelta(seconds=0)
                 # extract the minutes
                 arrival = str(arrival).split(":")[1]
                 
                 # clean the arrival time
                 if arrival == "00":
-                    arrival = "due"
+                    arrival = "0" # due does not fit with the current setup.
                 elif arrival[0] == "0":
                     arrival = arrival[1:]
                 output = output.replace(busPlace+str(n+1)+'_DISP', show)
