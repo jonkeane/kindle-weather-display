@@ -93,6 +93,12 @@ def addTransit(output, path="localData/busPredictions.xml"):
                 arrival = arrival-datetime.timedelta(seconds=60)
                 # extract the minutes
                 arrival = str(arrival).split(":")[1]
+                
+                # clean the arrival time
+                if arrival == "00":
+                    arrival = "due"
+                elif arrival[0] == "0":
+                    arrival = arrival[1:]
                 output = output.replace(busPlace+str(n+1)+'_DISP', show)
                 output = output.replace(busPlace+str(n+1), arrival)
             except IndexError:
