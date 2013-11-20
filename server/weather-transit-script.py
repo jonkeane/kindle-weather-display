@@ -157,7 +157,12 @@ CURRWIND = int(round(parsed_json['current_observation']['wind_mph']))
 WIND_DEGS = parsed_json['current_observation']['wind_degrees']
 CURRHUM = parsed_json['current_observation']['relative_humidity']
 CURR_COND_ICON = parsed_json['current_observation']['icon']
-CURR_COND_ICON_url = 'weather-icons/' + CURR_COND_ICON + '.svg'
+# check if the icon url has nt_ at the beginning
+if parsed_json['current_observation']['icon_url'].split('/')[-1][:3] == "nt_":
+    pre = "night/"
+else:
+    pre = ""
+CURR_COND_ICON_url = 'weather-icons/' + pre + CURR_COND_ICON + '.svg'
 
 # Insert icons and temperatures
 output = output.replace('CURRTEMP',str(CURRTEMP))
@@ -217,7 +222,7 @@ winds = [int(parsed_json['hourly_forecast'][x]['wspd']['english']) for x in rang
 winds_degs = [int(parsed_json['hourly_forecast'][x]['wdir']['degrees']) for x in range(1,13)]
 humids = [int(parsed_json['hourly_forecast'][x]['humidity']) for x in range(1,13)]
 percips = [int(parsed_json['hourly_forecast'][x]['pop']) for x in range(1,13)]
-cond_icons = [parsed_json['hourly_forecast'][x]['icon'] for x in range(1,13)]
+cond_icons = [(parsed_json['hourly_forecast'][x]['icon'],  parsed_json['hourly_forecast'][x]['icon_url'].split('/')[-1][:3]) for x in range(1,13)]
 
 # Insert icons and temperatures
 h = 1
@@ -249,7 +254,11 @@ for v in percips:
 # Grab the icon for the condition
 h = 1       
 for v in cond_icons:
-    CURR_COND_ICON_url = 'weather-icons/' + v + '.svg'
+    if v[1] == "nt_":
+        pre = "night/"
+    else:
+        pre = ""
+    CURR_COND_ICON_url = 'weather-icons/' + pre + v[0] + '.svg'
     if os.path.isfile(CURR_COND_ICON_url):
         fIcon = codecs.open(CURR_COND_ICON_url ,'r', encoding='utf-8')
         fIcon.readline()
