@@ -91,16 +91,20 @@ def addTransit(output, paths=["localData/busPredictions.xml","localData/trainPre
              
                 route = ''.join([trainStopIDsToBounds[child.findall('stpId')[0].text],child.findall('rt')[0].text]).lower()
                 try:
-                    buses[route].append(child.findall('arrT')[0].text[:-3])
+                    buses[route].append(child.findall('arrT')[0].text)
                 except KeyError:
                     pass                   
                                         
     #make a dictionary of arrival times
     for bus in arrivals.keys():     
         for indBus in buses[bus]:
-            arrival = datetime.datetime.strptime(indBus, "%Y%m%d %H:%M")-datetime.datetime.fromtimestamp(time.mktime(time.localtime()))            
-            # subtract a minute from the minutes until arrival
-            arrival = arrival-datetime.timedelta(seconds=60)
+            if len(indBus) == 14: # for buses
+                arrival = datetime.datetime.strptime(indBus, "%Y%m%d %H:%M")-datetime.datetime.fromtimestamp(time.mktime(time.localtime()))            
+                # subtract a minute from the minutes until arrival
+                arrival = arrival-datetime.timedelta(seconds=60)
+            if len(indBus) == 17: # for trains
+                arrival = datetime.datetime.strptime(indBus, "%Y%m%d %H:%M:%S")-datetime.datetime.fromtimestamp(time.mktime(time.localtime()))            
+                arrival = arrival-datetime.timedelta(seconds=00)
             # ensure that arrival times are longer than 1 minute
             if arrival>datetime.timedelta(seconds=60):
                 # extract the minutes
