@@ -43,25 +43,31 @@ def ctaPredGrabber(stopIDs, path, apiKey=privateVars.ctaAPIkey):
     f.close()
     currFile.close()    
     
-
-def addTransit(output, path="localData/busPredictions.xml"):
+def ctaTrainPredGrabber(stopIDs, path, apiKey=privateVars.ctaTrainAPIkey):
+    if isinstance(stopIDs, str):
+        stopIDs = [stopIDs]
+    f = urllib2.urlopen('http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key='+apiKey+'&stpid='+','.join(stopIDs))
+    currFile = open(path, "w")
+    currFile.write(f.read())
+    f.close()
+    currFile.close()    
+    
+def addTransit(output, paths=["localData/busPredictions.xml","localData/trainPredictions.xml"]):
     ########## transit ###########
     #establish display variables:
     show="inline"
     hide="none"
 
-    ### Deal with the currentConditions file
-
-    # parse the file
-    parsed_xml = ET.parse(path)
-    root = parsed_xml.getroot()
-
     buses = {"sb36":  [], "nb36":  [], "wb78":  [], "eb78":  [], "sb151":  [], "nb151":  [], "sb148":  [], "nb148":  [], "nbred":  [], "sbred":  []}
     arrivals = {"sb36":  [], "nb36":  [], "wb78":  [], "eb78":  [], "sb151":  [], "nb151":  [], "sb148":  [], "nb148":  [], "nbred":  [], "sbred":  []}
     bounds = {"Northbound": "nb", "Southbound": "sb", "Eastbound": "eb", "Westbound": "wb"}
+    trainStopIDsToBounds = {"30105": "nb", "30106": "sb"}
     busPlaces = {"36":"BUS1" , "78": "BUS2" , "151": "BUS3", "148": "BUS4", "red": "BUS5"}
     seenVIDs = []
 
+    # parse the buses file
+    parsed_xml = ET.parse(paths[0])
+    root = parsed_xml.getroot()
     for child in root:
         if child.tag == "prd":
             dupCheck = ''.join([bounds[child.findall('rtdir')[0].text],child.findall('rt')[0].text,child.findall('vid')[0].text,child.findall('prdtm')[0].text])
@@ -74,6 +80,21 @@ def addTransit(output, path="localData/busPredictions.xml"):
                 except KeyError:
                     pass
                     
+    # parse the trains file
+    parsed_xml = ET.parse(paths[1])
+    root = parsed_xml.getroot()
+    for child in root:
+        if child.tag == "eta":
+            dupCheck = ''.join([trainStopIDsToBounds[child.findall('stpId')[0].text],child.findall('rt')[0].text,child.findall('rn')[0].text,child.findall('arrT')[0].text])
+            if dupCheck not in seenVIDs:
+                seenVIDs.append(dupCheck)
+             
+                route = ''.join([trainStopIDsToBounds[child.findall('stpId')[0].text],child.findall('rt')[0].text]).lower()
+                try:
+                    buses[route].append(child.findall('arrT')[0].text[:-3])
+                except KeyError:
+                    pass                   
+                                        
     #make a dictionary of arrival times
     for bus in arrivals.keys():     
         for indBus in buses[bus]:
@@ -129,6 +150,11 @@ def addTransit(output, path="localData/busPredictions.xml"):
 # check the ctabusPredictions file to see if it's older than 5 seconds
 if fileChecker("localData/busPredictions.xml", 5) == "create":
     ctaPredGrabber(stopIDs=[privateVars.sb36, privateVars.nb36, privateVars.wb78, privateVars.eb78, privateVars.sb151, privateVars.nb151, privateVars.sb148, privateVars.nb148], path="localData/busPredictions.xml")
+
+# check the cttrainPredictions file to see if it's older than 5 seconds
+if fileChecker("localData/trainPredictions.xml", 5) == "create":
+    ctaTrainPredGrabber(stopIDs=[privateVars.sbred, privateVars.nbred], path="localData/trainPredictions.xml")
+
 
     
 ########## current ###########
