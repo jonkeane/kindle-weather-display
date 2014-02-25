@@ -14,3 +14,8 @@ rsvg-convert --background-color=white -o weather-script-output-hourly.png weathe
 convert weather-script-output-hourly.png -rotate 270 weather-script-output-hourly-rotated.png
 pngcrush -c 0 weather-script-output-hourly-rotated.png weather-script-output-hourly-final.png
 cp -f weather-script-output-hourly-final.png /var/www/weather-script-output-hourly.png
+
+rsvg-convert --background-color=white -o weather-script-output-daily.png weather-script-output-daily.svg
+convert weather-script-output-daily.png -rotate 270 weather-script-output-daily-rotated.png
+pngcrush -c 0 weather-script-output-daily-rotated.png weather-script-output-daily-final.png
+cp -f weather-script-output-daily-final.png /var/www/weather-script-output-daily.png
