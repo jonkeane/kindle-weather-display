@@ -26,8 +26,11 @@ def fileChecker(path, refreshInterval):
         output = "create"
     return output
     
-def weatherGrabber(type, path, apiKey=privateVars.wundergroundAPIkey, zipCode=privateVars.zipCode):
-    f = urllib2.urlopen('http://api.wunderground.com/api/'+apiKey+'/geolookup/'+type+'/q/'+zipCode+'.json')
+def weatherGrabber(type, path, source="forecastIO", apiKey=privateVars.forecastAPIkey, zipCode=privateVars.zipCode, lat=privateVars.lat, lng=privateVars.lng):
+    if source == "wunderground":
+        f = urllib2.urlopen('http://api.wunderground.com/api/'+apiKey+'/geolookup/'+type+'/q/'+zipCode+'.json')
+    elif source == "forecastIO":
+        f = urllib2.urlopen('https://api.forecast.io/forecast/'+apiKey+'/'+str(lat)+','+str(lng))
     currFile = open(path, "w")
     currFile.write(f.read())
     f.close()
@@ -180,25 +183,35 @@ json_string = fCurrCond.read()
 parsed_json = json.loads(json_string)
 fCurrCond.close()
 
-# parse out the dynamic variables
-CURRTEMP = int(round(parsed_json['current_observation']['temp_f']))
-CURRFEELS = int(round(float(parsed_json['current_observation']['feelslike_f'])))
-CURRWIND = int(round(parsed_json['current_observation']['wind_mph']))
-WIND_DEGS = parsed_json['current_observation']['wind_degrees']
-CURRHUM = parsed_json['current_observation']['relative_humidity']
-CURR_COND_ICON = parsed_json['current_observation']['icon']
-# check if the icon url has nt_ at the beginning
-if parsed_json['current_observation']['icon_url'].split('/')[-1][:3] == "nt_":
-    pre = "night/"
-else:
-    pre = ""
-CURR_COND_ICON_url = 'weather-icons/' + pre + CURR_COND_ICON + '.svg'
+# parse out the dynamic variables for wunderground
+# CURRTEMP = int(round(parsed_json['current_observation']['temp_f']))
+# CURRFEELS = int(round(float(parsed_json['current_observation']['feelslike_f'])))
+# CURRWIND = int(round(parsed_json['current_observation']['wind_mph']))
+# WIND_DEGS = parsed_json['current_observation']['wind_degrees']
+# CURRHUM = parsed_json['current_observation']['relative_humidity']
+# CURR_COND_ICON = parsed_json['current_observation']['icon']
+# # check if the icon url has nt_ at the beginning
+# if parsed_json['current_observation']['icon_url'].split('/')[-1][:3] == "nt_":
+#     pre = "night/"
+# else:
+#     pre = ""
+# CURR_COND_ICON_url = 'weather-icons/' + pre + CURR_COND_ICON + '.svg'
+
+# parse out the dynamic variables for forecast
+CURRTEMP = int(round(parsed_json['currently']['temperature']))
+CURRFEELS = int(round(float(parsed_json['currently']['apparentTemperature'])))
+CURRWIND = int(round(parsed_json['currently']['windSpeed']))
+WIND_DEGS = parsed_json['currently']['windBearing']
+CURRHUM = parsed_json['currently']['humidity']
+CURR_COND_ICON = parsed_json['currently']['icon']
+CURR_COND_ICON_url = 'weather-icons/' + privateVars.iconMap[CURR_COND_ICON]
 
 # Insert icons and temperatures
 output = output.replace('CURRTEMP',str(CURRTEMP))
 output = output.replace('CURRFEELS',str(CURRFEELS))
 output = output.replace('CURRWIND',str(CURRWIND))
-output = output.replace('CURRHUM',str(CURRHUM.strip('%')))
+# output = output.replace('CURRHUM',str(CURRHUM.strip('%'))) # for wunderground
+output = output.replace('CURRHUM',str(int(CURRHUM*100))) # for forecast.io
 output = output.replace('WIND_DEGS',str(WIND_DEGS))
 
 # Grab the icon for the condition
@@ -236,23 +249,33 @@ hide="none"
 
 ### Deal with the hourly file
 # check the currenConditions file to see if it's older than 5 minutes
-if fileChecker("localData/hourly.json", 3600) == "create":
-    weatherGrabber(type="hourly", path="localData/hourly.json")
-fCurrCond = open("localData/hourly.json",'r')
+# if fileChecker("localData/hourly.json", 3600) == "create":
+#     weatherGrabber(type="hourly", path="localData/hourly.json")
+# fCurrCond = open("localData/hourly.json",'r')
+fCurrCond = open("localData/currentConditions.json",'r')
 
 # read the file
 json_string = fCurrCond.read()
 parsed_json = json.loads(json_string)
 fCurrCond.close()
 
-# parse out the dynamic variables
-hours = [int(parsed_json['hourly_forecast'][x]['FCTTIME']['hour']) for x in range(1,13)]
-temps = [int(parsed_json['hourly_forecast'][x]['temp']['english']) for x in range(1,13)]
-winds = [int(parsed_json['hourly_forecast'][x]['wspd']['english']) for x in range(1,13)]
-winds_degs = [int(parsed_json['hourly_forecast'][x]['wdir']['degrees']) for x in range(1,13)]
-humids = [int(parsed_json['hourly_forecast'][x]['humidity']) for x in range(1,13)]
-percips = [int(parsed_json['hourly_forecast'][x]['pop']) for x in range(1,13)]
-cond_icons = [(parsed_json['hourly_forecast'][x]['icon'],  parsed_json['hourly_forecast'][x]['icon_url'].split('/')[-1][:3]) for x in range(1,13)]
+# parse out the dynamic variables wunderground
+# hours = [int(parsed_json['hourly_forecast'][x]['FCTTIME']['hour']) for x in range(1,13)]
+# temps = [int(parsed_json['hourly_forecast'][x]['temp']['english']) for x in range(1,13)]
+# winds = [int(parsed_json['hourly_forecast'][x]['wspd']['english']) for x in range(1,13)]
+# winds_degs = [int(parsed_json['hourly_forecast'][x]['wdir']['degrees']) for x in range(1,13)]
+# humids = [int(parsed_json['hourly_forecast'][x]['humidity']) for x in range(1,13)]
+# percips = [int(parsed_json['hourly_forecast'][x]['pop']) for x in range(1,13)]
+# cond_icons = [(parsed_json['hourly_forecast'][x]['icon'],  parsed_json['hourly_forecast'][x]['icon_url'].split('/')[-1][:3]) for x in range(1,13)]
+
+# parse out the dynamic variables forecastio
+hours = [time.strftime("%H", time.localtime(int(parsed_json['hourly']['data'][x]['time'])))  for x in range(1,13)]
+temps = [int(round(parsed_json['hourly']['data'][x]['temperature'])) for x in range(1,13)]
+winds = [int(round(parsed_json['hourly']['data'][x]['windSpeed'])) for x in range(1,13)]
+winds_degs = [int(parsed_json['hourly']['data'][x]['windBearing']) for x in range(1,13)]
+humids = [int(parsed_json['hourly']['data'][x]['humidity']*100) for x in range(1,13)]
+percips = [int(parsed_json['hourly']['data'][x]['precipProbability']) for x in range(1,13)]
+cond_icons = [(parsed_json['hourly']['data'][x]['icon']) for x in range(1,13)]
 
 # Insert icons and temperatures
 h = 1
@@ -284,11 +307,13 @@ for v in percips:
 # Grab the icon for the condition
 h = 1       
 for v in cond_icons:
-    if v[1] == "nt_":
-        pre = "night/"
-    else:
-        pre = ""
-    CURR_COND_ICON_url = 'weather-icons/' + pre + v[0] + '.svg'
+    # for wunderground
+    # if v[1] == "nt_":
+    #     pre = "night/"
+    # else:
+    #     pre = ""
+    # CURR_COND_ICON_url = 'weather-icons/' + pre + v[0] + '.svg'
+    CURR_COND_ICON_url = 'weather-icons/' + privateVars.iconMap[v]
     if os.path.isfile(CURR_COND_ICON_url):
         fIcon = codecs.open(CURR_COND_ICON_url ,'r', encoding='utf-8')
         fIcon.readline()
@@ -311,5 +336,84 @@ output = output.replace('DISP12HOUR',show)
 
 # Write output
 codecs.open('weather-script-output-hourly.svg', 'w', encoding='utf-8').write(output)
+
+
+########## daily ###########
+# Open SVG to process
+output = codecs.open('weather-transit-preprocess.svg', 'r', encoding='utf-8').read()
+
+#establish display variables:
+show="inline"
+hide="none"
+
+### Deal with the hourly file
+# check the currenConditions file to see if it's older than 5 minutes
+# if fileChecker("localData/hourly.json", 3600) == "create":
+#     weatherGrabber(type="hourly", path="localData/hourly.json")
+# fCurrCond = open("localData/hourly.json",'r')
+fCurrCond = open("localData/currentConditions.json",'r')
+
+# read the file
+json_string = fCurrCond.read()
+parsed_json = json.loads(json_string)
+fCurrCond.close()
+
+
+# parse out the dynamic variables forecastio
+days = [time.strftime("%A", time.localtime(int(parsed_json['daily']['data'][x]['time'])))  for x in range(0,5)]
+hitemps = [int(round(parsed_json['daily']['data'][x]['temperatureMax'])) for x in range(0,5)]
+lotemps = [int(round(parsed_json['daily']['data'][x]['temperatureMin'])) for x in range(0,5)]
+cond_icons = [(parsed_json['daily']['data'][x]['icon']) for x in range(0,5)]
+
+# Insert icons and temperatures
+h = 1
+for v in days:
+    output = output.replace('DAY_'+str(h)+'_',str(v))
+    h += 1
+h = 1
+for v in hitemps:
+    output = output.replace('TEMP_HI_'+str(h)+'_',str(v))
+    h += 1    
+h = 1
+for v in lotemps:
+    output = output.replace('TEMP_LO_'+str(h)+'_',str(v))
+    h += 1    
+  
+    
+
+# Grab the icon for the condition
+h = 1       
+for v in cond_icons:
+    # for wunderground
+    # if v[1] == "nt_":
+    #     pre = "night/"
+    # else:
+    #     pre = ""
+    # CURR_COND_ICON_url = 'weather-icons/' + pre + v[0] + '.svg'
+    CURR_COND_ICON_url = 'weather-icons/' + privateVars.iconMap[v]
+    if os.path.isfile(CURR_COND_ICON_url):
+        fIcon = codecs.open(CURR_COND_ICON_url ,'r', encoding='utf-8')
+        fIcon.readline()
+        icon = fIcon.readline()
+        fIcon.close()
+    else:
+        fIcon = codecs.open("weather-icons/unknown.svg" ,'r', encoding='utf-8')
+        fIcon.readline()
+        icon = fIcon.readline()
+        fIcon.close()        
+    output = output.replace('DAY_COND_ICON_'+str(h),icon)
+    h += 1
+
+#Add transit information
+output = addTransit(output)
+
+output = output.replace('DISP_CURR',hide)
+output = output.replace('DISP5DAY',show)
+output = output.replace('DISP12HOUR',hide)
+
+# Write output
+codecs.open('weather-script-output-daily.svg', 'w', encoding='utf-8').write(output)
+
+
 
 
