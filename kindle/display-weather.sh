@@ -4,6 +4,7 @@ cd "$(dirname "$0")"
 
 rm weather-script-output-current.png
 rm weather-script-output-hourly.png
+rm weather-script-output-daily.png
 
 wget http://192.168.100.111:8080/weather-script-output-current.png
 wget http://192.168.100.111:8080/weather-script-output-hourly.png
