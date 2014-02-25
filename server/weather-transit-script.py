@@ -11,6 +11,17 @@ import os.path, time, datetime
 import privateVars
 import xml.etree.ElementTree as ET
 
+iconMap = {"clear-day":  "clear.svg",
+"clear-night":  "night/clear.svg",
+"rain":  "rain.svg",
+"snow":  "snow.svg",
+"sleet":  "sleet.svg",
+"wind":  "wind.svg",
+"fog":  "fog.svg",
+"cloudy":  "cloudy.svg",
+"partly-cloudy-day":  "partlycloudy.svg",
+"partly-cloudy-night":  "night/partlycloudy.svg"}
+
 def fileChecker(path, refreshInterval):
     # check if the file exists
     if os.path.isfile(path):
@@ -204,7 +215,7 @@ CURRWIND = int(round(parsed_json['currently']['windSpeed']))
 WIND_DEGS = parsed_json['currently']['windBearing']
 CURRHUM = parsed_json['currently']['humidity']
 CURR_COND_ICON = parsed_json['currently']['icon']
-CURR_COND_ICON_url = 'weather-icons/' + privateVars.iconMap[CURR_COND_ICON]
+CURR_COND_ICON_url = 'weather-icons/' + iconMap[CURR_COND_ICON]
 
 # Insert icons and temperatures
 output = output.replace('CURRTEMP',str(CURRTEMP))
@@ -313,7 +324,7 @@ for v in cond_icons:
     # else:
     #     pre = ""
     # CURR_COND_ICON_url = 'weather-icons/' + pre + v[0] + '.svg'
-    CURR_COND_ICON_url = 'weather-icons/' + privateVars.iconMap[v]
+    CURR_COND_ICON_url = 'weather-icons/' + iconMap[v]
     if os.path.isfile(CURR_COND_ICON_url):
         fIcon = codecs.open(CURR_COND_ICON_url ,'r', encoding='utf-8')
         fIcon.readline()
@@ -390,7 +401,7 @@ for v in cond_icons:
     # else:
     #     pre = ""
     # CURR_COND_ICON_url = 'weather-icons/' + pre + v[0] + '.svg'
-    CURR_COND_ICON_url = 'weather-icons/' + privateVars.iconMap[v]
+    CURR_COND_ICON_url = 'weather-icons/' + iconMap[v]
     if os.path.isfile(CURR_COND_ICON_url):
         fIcon = codecs.open(CURR_COND_ICON_url ,'r', encoding='utf-8')
         fIcon.readline()
