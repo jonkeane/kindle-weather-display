@@ -285,7 +285,7 @@ temps = [int(round(parsed_json['hourly']['data'][x]['temperature'])) for x in ra
 winds = [int(round(parsed_json['hourly']['data'][x]['windSpeed'])) for x in range(1,13)]
 winds_degs = [int(parsed_json['hourly']['data'][x]['windBearing']) for x in range(1,13)]
 humids = [int(parsed_json['hourly']['data'][x]['humidity']*100) for x in range(1,13)]
-percips = [int(parsed_json['hourly']['data'][x]['precipProbability']) for x in range(1,13)]
+percips = [int(parsed_json['hourly']['data'][x]['precipProbability']*100) for x in range(1,13)]
 cond_icons = [(parsed_json['hourly']['data'][x]['icon']) for x in range(1,13)]
 
 # Insert icons and temperatures
