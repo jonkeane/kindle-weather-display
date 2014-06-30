@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python
 
 # Kindle Transit-Weather Display
 # Inspired by Matthew Petroff (http://www.mpetroff.net/)
@@ -74,7 +74,7 @@ def addTransit(output, paths=["localData/busPredictions.xml","localData/trainPre
 
     buses = {"sb36":  [], "nb36":  [], "wb78":  [], "eb78":  [], "sb151":  [], "nb151":  [], "sb148":  [], "nb148":  [], "nbred":  [], "sbred":  []}
     arrivals = {"sb36":  [], "nb36":  [], "wb78":  [], "eb78":  [], "sb151":  [], "nb151":  [], "sb148":  [], "nb148":  [], "nbred":  [], "sbred":  []}
-    bounds = {"Northbound": "nb", "Southbound": "sb", "Eastbound": "eb", "Westbound": "wb"}
+    bounds = {"Northbound": "nb", "Southbound": "sb", "Eastbound": "eb", "Westbound": "wb","NORTH": "nb", "SOUTH": "sb", "EAST": "eb", "WEST": "wb"}
     trainStopIDsToBounds = {"30105": "nb", "30106": "sb"}
     busPlaces = {"36":"BUS1" , "78": "BUS2" , "151": "BUS3", "148": "BUS4", "red": "BUS5"}
     seenVIDs = []
