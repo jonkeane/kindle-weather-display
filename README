@@ -2,5 +2,7 @@ A kindle information display that shows transit arrival times from the CTA, as w
 
 Has multiple views for the weather: current conditions, hourly forecast for 12 hours, and a 5 day forecast.
 
+kindleFrameApart.ai is an illustrator for a wooden frame that is lasercut, using 1/4inch wood. It worked successfully with an Epilog, but might require alterations for other laser cutters.
+
 Based largely on the kindle-weather-display from:
 http://www.mpetroff.net/archives/2012/09/14/kindle-weather-display/
