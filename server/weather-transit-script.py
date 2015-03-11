@@ -72,11 +72,16 @@ def addTransit(output, paths=["localData/busPredictions.xml","localData/trainPre
     show="inline"
     hide="none"
 
-    buses = {"sb36":  [], "nb36":  [], "wb78":  [], "eb78":  [], "sb151":  [], "nb151":  [], "sb148":  [], "nb148":  [], "nbred":  [], "sbred":  []}
-    arrivals = {"sb36":  [], "nb36":  [], "wb78":  [], "eb78":  [], "sb151":  [], "nb151":  [], "sb148":  [], "nb148":  [], "nbred":  [], "sbred":  []}
+    thingsToTrack = privateVars.busesToTrack.keys() + privateVars.trainsToTrack.keys()
+
+    buses = {x:[] for x in thingsToTrack}
+    arrivals = {x:[] for x in thingsToTrack}
+    
+    
     bounds = {"Northbound": "nb", "Southbound": "sb", "Eastbound": "eb", "Westbound": "wb","NORTH": "nb", "SOUTH": "sb", "EAST": "eb", "WEST": "wb"}
-    trainStopIDsToBounds = {"30105": "nb", "30106": "sb"}
-    busPlaces = {"36":"BUS1" , "78": "BUS2" , "151": "BUS3", "148": "BUS4", "red": "BUS5"}
+    
+    trainStopIDsToBounds = {"30020": "nb", "30021": "sb"} # this should be abstracted
+    
     seenVIDs = []
 
     # parse the buses file
@@ -127,7 +132,7 @@ def addTransit(output, paths=["localData/busPredictions.xml","localData/trainPre
             
     for bus in buses.keys():
         # grab the place identifier
-        busPlace = busPlaces[bus[2:]]
+        busPlace = privateVars.busPlaces[bus[2:]]
         # add the up or down designation 
         if bus[:2] == "nb" or  bus[:2] == "wb":
             busPlace = busPlace+"_D"
@@ -164,14 +169,14 @@ def addTransit(output, paths=["localData/busPredictions.xml","localData/trainPre
     return(output)
 
 
-    
+
 # check the ctabusPredictions file to see if it's older than 5 seconds
 if fileChecker("localData/busPredictions.xml", 5) == "create":
-    ctaPredGrabber(stopIDs=[privateVars.sb36, privateVars.nb36, privateVars.wb78, privateVars.eb78, privateVars.sb151, privateVars.nb151, privateVars.sb148, privateVars.nb148], path="localData/busPredictions.xml")
+    ctaPredGrabber(stopIDs=privateVars.busesToTrack.values(), path="localData/busPredictions.xml")
 
 # check the cttrainPredictions file to see if it's older than 5 seconds
 if fileChecker("localData/trainPredictions.xml", 5) == "create":
-    ctaTrainPredGrabber(stopIDs=[privateVars.sbred, privateVars.nbred], path="localData/trainPredictions.xml")
+    ctaTrainPredGrabber(stopIDs=privateVars.trainsToTrack.values(), path="localData/trainPredictions.xml")
 
 
     
