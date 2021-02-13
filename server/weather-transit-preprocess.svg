@@ -141,7 +141,7 @@
 			C511.645,166.363,510.229,167.77,508.487,167.77z M513.468,150.854c0,2.595-2.104,4.697-4.696,4.697h-40.091
 			c-2.597,0-4.696-2.103-4.696-4.697v-20.423c0-2.595,2.102-4.697,4.696-4.697h40.091c2.594,0,4.696,2.103,4.696,4.697V150.854
 			L513.468,150.854z"/>
-		<text transform="matrix(1 0 0 1 475 150)" fill="#010101" font-family="'DejaVuSans'" font-size="26">22</text>
+		<text transform="matrix(1 0 0 1 472 150)" fill="#010101" font-family="'DejaVuSans'" font-size="26">22</text>
 	</g>
 	<text transform="matrix(1 0 0 1 492.9805 105.4688)" font-family="'DejaVuSans'" display="BUS3_U1_DISP" font-size="16">m</text>
 	<text transform="matrix(1 0 0 1 492.9805 74.4102)" font-family="'DejaVuSans'" display="BUS3_U2_DISP" font-size="16">m</text>
@@ -169,7 +169,7 @@
 			S230.9,151.2,233.1,151.2z M215.5,172.2c-0.3,0-0.5,0.3-0.5,0.6v0.4c0,0.3,0.2,0.6,0.5,0.6h14.7c0.3,0,0.5-0.3,0.5-0.6v-0.4
 			c0-0.3-0.2-0.6-0.5-0.6H215.5z M210.7,179.2c-0.5,0-0.8,0.3-0.8,0.6v0.4c0,0.3,0.4,0.6,0.8,0.6h24.4c0.5,0,0.8-0.3,0.8-0.6v-0.4
 			c0-0.3-0.4-0.6-0.8-0.6H210.7z"/>
-		<text transform="matrix(1 0 0 1 211.3535 137.8105)" fill="#010101" font-family="'DejaVuSans'" font-size="15.6">red</text>
+		<text transform="matrix(1 0 0 1 210 137.8105)" fill="#010101" font-family="'DejaVuSans'" font-size="15.6">red</text>
 	</g>
 	<text transform="matrix(1 0 0 1 227.4443 105.4688)" font-family="'DejaVuSans'" display="BUS1_U1_DISP" font-size="16">m</text>
 	<text transform="matrix(1 0 0 1 227.4443 74.4102)" font-family="'DejaVuSans'" display="BUS1_U2_DISP" font-size="16">m</text>
@@ -196,7 +196,7 @@
 			S366.5,150.5,368.7,150.5z M351.1,171.6c-0.3,0-0.5,0.3-0.5,0.6v0.4c0,0.3,0.2,0.6,0.5,0.6h14.7c0.3,0,0.5-0.3,0.5-0.6v-0.4
 			c0-0.3-0.2-0.6-0.5-0.6H351.1z M346.3,178.5c-0.5,0-0.8,0.3-0.8,0.6v0.4c0,0.3,0.4,0.6,0.8,0.6h24.4c0.5,0,0.8-0.3,0.8-0.6v-0.4
 			c0-0.3-0.4-0.6-0.8-0.6H346.3z"/>
-		<text transform="matrix(1 0 0 1 343.4 136)" fill="#010101" font-family="'DejaVuSans'" font-size="11">brown</text>
+		<text transform="matrix(1 0 0 1 343 136)" fill="#010101" font-family="'DejaVuSans'" font-size="10">brown</text>
 	</g>
 	<text transform="matrix(1 0 0 1 363.0503 105.4688)" font-family="'DejaVuSans'" display="BUS2_U1_DISP" font-size="16">m</text>
 	<text transform="matrix(1 0 0 1 363.0503 74.4102)" font-family="'DejaVuSans'" display="BUS2_U2_DISP" font-size="16">m</text>
@@ -226,7 +226,7 @@
 			c0-1.741,1.413-3.152,3.152-3.152c1.741,0,3.155,1.411,3.155,3.152C645.161,166.363,643.747,167.77,642.006,167.77z
 			 M646.986,150.854c0,2.595-2.104,4.697-4.698,4.697h-40.09c-2.598,0-4.697-2.103-4.697-4.697v-20.423
 			c0-2.595,2.102-4.697,4.697-4.697h40.09c2.595,0,4.698,2.103,4.698,4.697V150.854L646.986,150.854z"/>
-		<text transform="matrix(1 0 0 1 599.5 150)" fill="#010101" font-family="'DejaVuSans'" font-size="26">152</text>
+		<text transform="matrix(1 0 0 1 596.25 150)" fill="#010101" font-family="'DejaVuSans'" font-size="26">152</text>
 	</g>
 	<text transform="matrix(1 0 0 1 626.498 105.4688)" font-family="'DejaVuSans'" display="BUS4_U1_DISP" font-size="16">m</text>
 	<text transform="matrix(1 0 0 1 626.498 74.4102)" font-family="'DejaVuSans'" display="BUS4_U2_DISP" font-size="16">m</text>
