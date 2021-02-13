@@ -78,10 +78,24 @@ def addTransit(output, paths=["localData/busPredictions.xml","localData/trainPre
     arrivals = {x:[] for x in thingsToTrack}
     
     
-    bounds = {"Northbound": "nb", "Southbound": "sb", "Eastbound": "eb", "Westbound": "wb","NORTH": "nb", "SOUTH": "sb", "EAST": "eb", "WEST": "wb"}
+    bounds = {
+    "Northbound": "nb", 
+    "Southbound": "sb", 
+    "Eastbound": "eb", 
+    "Westbound": "wb",
+    "NORTH": "nb", 
+    "SOUTH": "sb", 
+    "EAST": "eb", 
+    "WEST": "wb"
+    }
     
-    trainStopIDsToBounds = {"30020": "nb", "30021": "sb"} # this should be abstracted
-    
+    # this should be abstracted
+    trainStopIDsToBounds = {
+    "30274": "sb",   
+    "30273": "nb",
+    "30071": "sb",
+    "30070": "nb"
+    }
     seenVIDs = []
 
     # parse the buses file
