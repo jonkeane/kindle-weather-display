@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 
 # Kindle Weather Display
 # Matthew Petroff (http://www.mpetroff.net/)
