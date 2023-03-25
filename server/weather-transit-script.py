@@ -26,7 +26,7 @@ def iconMap(condition, daylight):
         "Dust": "fog.svg",
         "Haze": "hazy.svg",
         "Cloudy": "cloudy.svg",
-        "MostlyClear": "mostlyclear.svg",
+        "MostlyClear": "mostlysunny.svg",
         "MostlyCloudy": "mostlycloudy.svg",
         "PartlyCloudy": "partlycloudy.svg",
         "ScatteredThunderstorms": "tstorms.svg",
