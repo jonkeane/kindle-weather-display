@@ -56,6 +56,7 @@ def iconMap(condition, daylight):
         "IsolatedThunderstorms": "tstorms.svg",
         "SevereThunderstorm": "tstorms.svg",
         "Thunderstorm": "tstorms.svg",
+        "Thunderstorms": "tstorms.svg",
         "Tornado": "tstorms.svg",
         "TropicalStorm": "tstorms.svg",
     }
