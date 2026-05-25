@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+
+
+
+
+
+
+
+
+
+
+		<bustime-response>	
+		
+
+
+
+			
+				<prd>
+					<tmstmp>20260525 07:59</tmstmp>
+					<typ>A</typ> 
+					<stpnm>Addison &amp; Southport</stpnm>
+					<stpid>12558</stpid>
+					 
+					<vid>8712</vid>
+					
+					 
+					<dstp>151</dstp>
+					<rt>152</rt>
+					<rtdd>152</rtdd>	
+					<rtdir>Westbound</rtdir>
+	        		<des>Cumberland</des>
+		        	 
+		        	<prdtm>20260525 08:00</prdtm>
+		        	
+		        	<tablockid>152 -401</tablockid>  
+		        	<tatripid>1033197</tatripid>
+		        	<zone></zone>  
+				</prd>			
+			
+				<prd>
+					<tmstmp>20260525 07:59</tmstmp>
+					<typ>A</typ> 
+					<stpnm>Clark &amp; Waveland</stpnm>
+					<stpid>18033</stpid>
+					 
+					<vid>4355</vid>
+					
+					 
+					<dstp>6250</dstp>
+					<rt>22</rt>
+					<rtdd>22</rtdd>	
+					<rtdir>Northbound</rtdir>
+	        		<des>Howard</des>
+		        	 
+		        	<prdtm>20260525 08:05</prdtm>
+		        	<dly>true</dly>
+		        	<tablockid>22 -501</tablockid>  
+		        	<tatripid>9</tatripid>
+		        	<zone></zone>  
+				</prd>			
+			
+				<prd>
+					<tmstmp>20260525 07:59</tmstmp>
+					<typ>A</typ> 
+					<stpnm>Ashland &amp; Addison</stpnm>
+					<stpid>14894</stpid>
+					 
+					<vid>1560</vid>
+					
+					 
+					<dstp>8611</dstp>
+					<rt>9</rt>
+					<rtdd>9</rtdd>	
+					<rtdir>Northbound</rtdir>
+	        		<des>Ravenswood Metra</des>
+		        	 
+		        	<prdtm>20260525 08:08</prdtm>
+		        	
+		        	<tablockid>9 -607</tablockid>  
+		        	<tatripid>1068663</tatripid>
+		        	<zone></zone>  
+				</prd>			
+			
+				<prd>
+					<tmstmp>20260525 07:59</tmstmp>
+					<typ>A</typ> 
+					<stpnm>Clark &amp; Waveland</stpnm>
+					<stpid>18033</stpid>
+					 
+					<vid>4149</vid>
+					
+					 
+					<dstp>12801</dstp>
+					<rt>22</rt>
+					<rtdd>22</rtdd>	
+					<rtdir>Northbound</rtdir>
+	        		<des>Howard</des>
+		        	 
+		        	<prdtm>20260525 08:13</prdtm>
+		        	
+		        	<tablockid>22 -507</tablockid>  
+		        	<tatripid>10</tatripid>
+		        	<zone></zone>  
+				</prd>			
+			
+				<prd>
+					<tmstmp>20260525 07:59</tmstmp>
+					<typ>A</typ> 
+					<stpnm>Clark &amp; Waveland</stpnm>
+					<stpid>1822</stpid>
+					 
+					<vid>4030</vid>
+					
+					 
+					<dstp>14874</dstp>
+					<rt>22</rt>
+					<rtdd>22</rtdd>	
+					<rtdir>Southbound</rtdir>
+	        		<des>Harrison</des>
+		        	 
+		        	<prdtm>20260525 08:15</prdtm>
+		        	
+		        	<tablockid>22 -504</tablockid>  
+		        	<tatripid>14</tatripid>
+		        	<zone></zone>  
+				</prd>			
+			
+				<prd>
+					<tmstmp>20260525 08:00</tmstmp>
+					<typ>A</typ> 
+					<stpnm>Ashland &amp; Addison</stpnm>
+					<stpid>17252</stpid>
+					 
+					<vid>8059</vid>
+					
+					 
+					<dstp>9908</dstp>
+					<rt>9</rt>
+					<rtdd>9</rtdd>	
+					<rtdir>Southbound</rtdir>
+	        		<des>95th</des>
+		        	 
+		        	<prdtm>20260525 08:18</prdtm>
+		        	
+		        	<tablockid>9 -613</tablockid>  
+		        	<tatripid>106856</tatripid>
+		        	<zone></zone>  
+				</prd>			
+			
+				<prd>
+					<tmstmp>20260525 07:59</tmstmp>
+					<typ>A</typ> 
+					<stpnm>Addison &amp; Southport</stpnm>
+					<stpid>12558</stpid>
+					 
+					<vid>8359</vid>
+					
+					 
+					<dstp>9652</dstp>
+					<rt>152</rt>
+					<rtdd>152</rtdd>	
+					<rtdir>Westbound</rtdir>
+	        		<des>Cumberland</des>
+		        	 
+		        	<prdtm>20260525 08:22</prdtm>
+		        	
+		        	<tablockid>152 -402</tablockid>  
+		        	<tatripid>1033198</tatripid>
+		        	<zone></zone>  
+				</prd>			
+			
+				<prd>
+					<tmstmp>20260525 07:59</tmstmp>
+					<typ>A</typ> 
+					<stpnm>Ashland &amp; Addison</stpnm>
+					<stpid>14894</stpid>
+					 
+					<vid>1570</vid>
+					
+					 
+					<dstp>25370</dstp>
+					<rt>9</rt>
+					<rtdd>9</rtdd>	
+					<rtdir>Northbound</rtdir>
+	        		<des>Ravenswood Metra</des>
+		        	 
+		        	<prdtm>20260525 08:25</prdtm>
+		        	
+		        	<tablockid>9 -606</tablockid>  
+		        	<tatripid>106846</tatripid>
+		        	<zone></zone>  
+				</prd>			
+			
+				<prd>
+					<tmstmp>20260525 07:59</tmstmp>
+					<typ>A</typ> 
+					<stpnm>Clark &amp; Waveland</stpnm>
+					<stpid>1822</stpid>
+					 
+					<vid>4124</vid>
+					
+					 
+					<dstp>22140</dstp>
+					<rt>22</rt>
+					<rtdd>22</rtdd>	
+					<rtdir>Southbound</rtdir>
+	        		<des>Harrison</des>
+		        	 
+		        	<prdtm>20260525 08:25</prdtm>
+		        	
+		        	<tablockid>22 -510</tablockid>  
+		        	<tatripid>15</tatripid>
+		        	<zone></zone>  
+				</prd>			
+			
+				<prd>
+					<tmstmp>20260525 07:59</tmstmp>
+					<typ>A</typ> 
+					<stpnm>Addison &amp; Southport</stpnm>
+					<stpid>12538</stpid>
+					 
+					<vid>1411</vid>
+					
+					 
+					<dstp>24080</dstp>
+					<rt>152</rt>
+					<rtdd>152</rtdd>	
+					<rtdir>Eastbound</rtdir>
+	        		<des>Lake Shore</des>
+		        	 
+		        	<prdtm>20260525 08:26</prdtm>
+		        	
+		        	<tablockid>152 -404</tablockid>  
+		        	<tatripid>1033196</tatripid>
+		        	<zone></zone>  
+				</prd>			
+			
+				<prd>
+					<tmstmp>20260525 07:59</tmstmp>
+					<typ>A</typ> 
+					<stpnm>Ashland &amp; Addison</stpnm>
+					<stpid>17252</stpid>
+					 
+					<vid>8704</vid>
+					
+					 
+					<dstp>11911</dstp>
+					<rt>9</rt>
+					<rtdd>9</rtdd>	
+					<rtdir>Southbound</rtdir>
+	        		<des>95th</des>
+		        	 
+		        	<prdtm>20260525 08:26</prdtm>
+		        	
+		        	<tablockid>9 -601</tablockid>  
+		        	<tatripid>106856</tatripid>
+		        	<zone></zone>  
+				</prd>			
+
+		</bustime-response>
+
+		
