@@ -239,7 +239,7 @@ def ctaPredGrabber(stopIDs, path, apiKey=None, request_get=None):
 
     get = _requests_get(request_get)
     response = get(
-        "http://www.ctabustracker.com/bustime/api/v1/getpredictions?key="
+        "https://www.ctabustracker.com/bustime/api/v3/getpredictions?key="
         + apiKey
         + "&stpid="
         + ",".join(str(stopID) for stopID in stopIDs)

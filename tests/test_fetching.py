@@ -58,7 +58,7 @@ def test_cta_bus_grabber_writes_mocked_response(tmp_path):
 
     assert output_path.read_text(encoding="utf-8") == "<bus />"
     assert calls == [
-        "http://www.ctabustracker.com/bustime/api/v1/getpredictions?"
+        "https://www.ctabustracker.com/bustime/api/v3/getpredictions?"
         "key=bus-token&stpid=12558,12559"
     ]
 
