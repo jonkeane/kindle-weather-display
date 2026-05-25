@@ -6,4 +6,5 @@ __pycache__/
 .env.*
 !.env.example
 server/localData/
+server/outputData/
 weatherkit_keys/

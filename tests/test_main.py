@@ -15,6 +15,7 @@ def test_main_creates_local_data_directory(
     )
 
     local_data_dir = app_dir / "localData"
+    output_data_dir = app_dir / "outputData"
     bus_payload = (
         Path(__file__).parent / "fixtures" / "busPredictions.xml"
     ).read_text(encoding="utf-8")
@@ -46,6 +47,7 @@ def test_main_creates_local_data_directory(
     weather_transit.main(base_dir=app_dir)
 
     assert local_data_dir.is_dir()
-    assert (app_dir / "weather-script-output-current.svg").is_file()
-    assert (app_dir / "weather-script-output-hourly.svg").is_file()
-    assert (app_dir / "weather-script-output-daily.svg").is_file()
+    assert output_data_dir.is_dir()
+    assert (output_data_dir / "weather-script-output-current.svg").is_file()
+    assert (output_data_dir / "weather-script-output-hourly.svg").is_file()
+    assert (output_data_dir / "weather-script-output-daily.svg").is_file()

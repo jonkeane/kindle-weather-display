@@ -619,6 +619,8 @@ def main(base_dir=SERVER_DIR, now=None, request_get=None):
     base_dir = Path(base_dir)
     local_data_dir = base_dir / "localData"
     local_data_dir.mkdir(exist_ok=True)
+    output_data_dir = base_dir / "outputData"
+    output_data_dir.mkdir(exist_ok=True)
     bus_predictions_path = local_data_dir / "busPredictions.xml"
     train_predictions_path = local_data_dir / "trainPredictions.xml"
     current_conditions_path = local_data_dir / "currentConditions.json"
@@ -657,7 +659,7 @@ def main(base_dir=SERVER_DIR, now=None, request_get=None):
     template = template_path.read_text(encoding="utf-8")
     transit_paths = [bus_predictions_path, train_predictions_path]
 
-    (base_dir / "weather-script-output-current.svg").write_text(
+    (output_data_dir / "weather-script-output-current.svg").write_text(
         build_current_output(
             weather_data,
             template,
@@ -668,7 +670,7 @@ def main(base_dir=SERVER_DIR, now=None, request_get=None):
         ),
         encoding="utf-8",
     )
-    (base_dir / "weather-script-output-hourly.svg").write_text(
+    (output_data_dir / "weather-script-output-hourly.svg").write_text(
         build_hourly_output(
             weather_data,
             template,
@@ -679,7 +681,7 @@ def main(base_dir=SERVER_DIR, now=None, request_get=None):
         ),
         encoding="utf-8",
     )
-    (base_dir / "weather-script-output-daily.svg").write_text(
+    (output_data_dir / "weather-script-output-daily.svg").write_text(
         build_daily_output(
             weather_data,
             template,
