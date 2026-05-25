@@ -25,8 +25,8 @@
 					
 					 
 					<dstp>151</dstp>
-					<rt>152</rt>
-					<rtdd>152</rtdd>	
+					<rt>80</rt>
+					<rtdd>80</rtdd>	
 					<rtdir>Westbound</rtdir>
 	        		<des>Cumberland</des>
 		        	 
@@ -47,8 +47,8 @@
 					
 					 
 					<dstp>6250</dstp>
-					<rt>22</rt>
-					<rtdd>22</rtdd>	
+					<rt>36</rt>
+					<rtdd>36</rtdd>	
 					<rtdir>Northbound</rtdir>
 	        		<des>Howard</des>
 		        	 
@@ -69,8 +69,8 @@
 					
 					 
 					<dstp>8611</dstp>
-					<rt>9</rt>
-					<rtdd>9</rtdd>	
+					<rt>81</rt>
+					<rtdd>81</rtdd>	
 					<rtdir>Northbound</rtdir>
 	        		<des>Ravenswood Metra</des>
 		        	 
@@ -91,8 +91,8 @@
 					
 					 
 					<dstp>12801</dstp>
-					<rt>22</rt>
-					<rtdd>22</rtdd>	
+					<rt>36</rt>
+					<rtdd>36</rtdd>	
 					<rtdir>Northbound</rtdir>
 	        		<des>Howard</des>
 		        	 
@@ -113,8 +113,8 @@
 					
 					 
 					<dstp>14874</dstp>
-					<rt>22</rt>
-					<rtdd>22</rtdd>	
+					<rt>36</rt>
+					<rtdd>36</rtdd>	
 					<rtdir>Southbound</rtdir>
 	        		<des>Harrison</des>
 		        	 
@@ -135,8 +135,8 @@
 					
 					 
 					<dstp>9908</dstp>
-					<rt>9</rt>
-					<rtdd>9</rtdd>	
+					<rt>81</rt>
+					<rtdd>81</rtdd>	
 					<rtdir>Southbound</rtdir>
 	        		<des>95th</des>
 		        	 
@@ -157,8 +157,8 @@
 					
 					 
 					<dstp>9652</dstp>
-					<rt>152</rt>
-					<rtdd>152</rtdd>	
+					<rt>80</rt>
+					<rtdd>80</rtdd>	
 					<rtdir>Westbound</rtdir>
 	        		<des>Cumberland</des>
 		        	 
@@ -179,8 +179,8 @@
 					
 					 
 					<dstp>25370</dstp>
-					<rt>9</rt>
-					<rtdd>9</rtdd>	
+					<rt>81</rt>
+					<rtdd>81</rtdd>	
 					<rtdir>Northbound</rtdir>
 	        		<des>Ravenswood Metra</des>
 		        	 
@@ -201,8 +201,8 @@
 					
 					 
 					<dstp>22140</dstp>
-					<rt>22</rt>
-					<rtdd>22</rtdd>	
+					<rt>36</rt>
+					<rtdd>36</rtdd>	
 					<rtdir>Southbound</rtdir>
 	        		<des>Harrison</des>
 		        	 
@@ -223,8 +223,8 @@
 					
 					 
 					<dstp>24080</dstp>
-					<rt>152</rt>
-					<rtdd>152</rtdd>	
+					<rt>80</rt>
+					<rtdd>80</rtdd>	
 					<rtdir>Eastbound</rtdir>
 	        		<des>Lake Shore</des>
 		        	 
@@ -245,8 +245,8 @@
 					
 					 
 					<dstp>11911</dstp>
-					<rt>9</rt>
-					<rtdd>9</rtdd>	
+					<rt>81</rt>
+					<rtdd>81</rtdd>	
 					<rtdir>Southbound</rtdir>
 	        		<des>95th</des>
 		        	 

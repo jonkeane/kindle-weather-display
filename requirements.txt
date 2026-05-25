@@ -1,1 +1,2 @@
 requests>=2
+python-dotenv>=1.0

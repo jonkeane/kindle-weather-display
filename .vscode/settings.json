@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^/Users/jkeane/repos/kindle-weather-display/\\.venv/bin/python -m pytest -q$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

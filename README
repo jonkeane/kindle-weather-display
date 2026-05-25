@@ -6,3 +6,11 @@ kindleFrameApart.ai is an illustrator for a wooden frame that is lasercut, using
 
 Based largely on the kindle-weather-display from:
 http://www.mpetroff.net/archives/2012/09/14/kindle-weather-display/
+
+Configuration is now environment-variable based.
+
+1. Copy `.env.example` to `.env` in the repository root.
+2. Fill in API keys and WeatherKit token values.
+3. Keep `.env` local (it is gitignored).
+
+The app loads these variables from `.env` via `python-dotenv`.

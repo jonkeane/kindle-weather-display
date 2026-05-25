@@ -102,7 +102,7 @@ class AppConfig:
 
 
 def _load_private_vars():
-    return importlib.import_module("privateVars")
+    return importlib.import_module("load_variables")
 
 
 def load_config(private_vars=None):
