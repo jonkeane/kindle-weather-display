@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 
 import weather_transit
+import weather
 
 
 def test_main_creates_local_data_directory(
@@ -42,7 +43,7 @@ def test_main_creates_local_data_directory(
         weather_transit, "ctaTrainPredGrabber", fake_cta_train_pred_grabber
     )
     monkeypatch.setattr(weather_transit, "weatherGrabber", fake_weather_grabber)
-    monkeypatch.setattr(weather_transit, "_read_icon_line", lambda *args: "<icon />")
+    monkeypatch.setattr(weather, "_read_icon_line", lambda *args: "<icon />")
 
     weather_transit.main(base_dir=app_dir)
 

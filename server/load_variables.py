@@ -14,13 +14,6 @@ if load_dotenv is not None:
     load_dotenv(dotenv_path=Path(__file__).resolve().parents[1] / ".env")
 
 
-def _env_str(name, default=""):
-    value = os.getenv(name)
-    if value is None:
-        return default
-    return value
-
-
 def _required_env_str(name):
     value = os.getenv(name)
     if value is None or value.strip() == "":
@@ -53,15 +46,13 @@ def _required_env_json(name):
     return parsed
 
 
-wundergroundAPIkey = _env_str("WUNDERGROUND_API_KEY")
-weatherKitToken = _env_str("WEATHERKIT_TOKEN")
-ctaAPIkey = _env_str("CTA_API_KEY")
-ctaTrainAPIkey = _env_str("CTA_TRAIN_API_KEY")
+weatherKitToken = _required_env_str("WEATHERKIT_TOKEN")
+ctaAPIkey = _required_env_str("CTA_API_KEY")
+ctaTrainAPIkey = _required_env_str("CTA_TRAIN_API_KEY")
 
 lat = _required_env_float("LAT")
 lng = _required_env_float("LNG")
 local_tz = _required_env_str("LOCAL_TZ")
-zipCode = _required_env_str("ZIP_CODE")
 
 
 busesToTrack = _required_env_json("BUSES_TO_TRACK_JSON")

@@ -1,7 +1,7 @@
 import datetime
 from zoneinfo import ZoneInfo
 
-import weather_transit
+import fetching
 
 
 class FakeResponse:
@@ -22,8 +22,7 @@ def test_weather_grabber_writes_mocked_weatherkit_response(tmp_path):
         return response
 
     output_path = tmp_path / "currentConditions.json"
-    weather_transit.weatherGrabber(
-        type="conditions",
+    fetching.weatherGrabber(
         path=output_path,
         apiKey="test-token",
         lat="41.95",
@@ -49,7 +48,7 @@ def test_cta_bus_grabber_writes_mocked_response(tmp_path):
         return FakeResponse("<bus />")
 
     output_path = tmp_path / "busPredictions.xml"
-    weather_transit.ctaPredGrabber(
+    fetching.ctaPredGrabber(
         ["12558", "12559"],
         output_path,
         apiKey="bus-token",
@@ -71,7 +70,7 @@ def test_cta_train_grabber_writes_mocked_response(tmp_path):
         return FakeResponse("<train />")
 
     output_path = tmp_path / "trainPredictions.xml"
-    weather_transit.ctaTrainPredGrabber(
+    fetching.ctaTrainPredGrabber(
         ["30070", "30071"],
         output_path,
         apiKey="train-token",

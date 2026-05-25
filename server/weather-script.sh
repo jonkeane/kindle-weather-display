@@ -2,7 +2,7 @@
 
 cd "$(dirname "$0")"
 
-python3 weather-transit-script.py
+python3 weather_transit.py
 
 rsvg-convert --background-color=white -o weather-script-output-current.png outputData/weather-script-output-current.svg
 convert weather-script-output-current.png -rotate 270 weather-script-output-current-rotated.png

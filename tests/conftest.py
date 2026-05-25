@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pytest
 
-from weather_transit import AppConfig
+from config import AppConfig
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -16,11 +16,9 @@ def pytest_configure(config):
     # Keep tests independent of any developer-local .env values.
     os.environ.update(
         {
-            "WUNDERGROUND_API_KEY": "test-wunderground-token",
             "WEATHERKIT_TOKEN": "test-weatherkit-token",
             "CTA_API_KEY": "test-cta-bus-token",
             "CTA_TRAIN_API_KEY": "test-cta-train-token",
-            "ZIP_CODE": "60657",
             "LAT": "41.9721",
             "LNG": "-87.6890",
             "LOCAL_TZ": "America/Chicago",
@@ -73,11 +71,9 @@ def weather_data(fixtures_dir):
 @pytest.fixture
 def sample_config():
     return AppConfig(
-        wunderground_api_key="wunderground-token",
         weather_kit_token="weather-token",
         cta_api_key="bus-token",
         cta_train_api_key="train-token",
-        zip_code="60657",
         lat="41.9721",
         lng="-87.6890",
         local_tz="America/Chicago",

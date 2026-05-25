@@ -1,4 +1,4 @@
-A kindle information display that shows transit arrival times from the CTA, as well as weather information from wunderground.
+A kindle information display that shows transit arrival times from the CTA, as well as weather information from Apple WeatherKit.
 
 Has multiple views for the weather: current conditions, hourly forecast for 12 hours, and a 5 day forecast.
 

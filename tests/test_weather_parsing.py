@@ -1,19 +1,20 @@
 import datetime
 import os
 
-import weather_transit
+import utils
+import weather
 
 
 def test_celsius_to_fahrenheit():
-    assert weather_transit.celsius_to_fahrenheit(0) == 32
-    assert weather_transit.celsius_to_fahrenheit(100) == 212
+    assert weather.celsius_to_fahrenheit(0) == 32
+    assert weather.celsius_to_fahrenheit(100) == 212
 
 
 def test_icon_map_uses_night_icon_when_available(server_dir):
-    day_icon = weather_transit.iconMap(
+    day_icon = weather.iconMap(
         "Clear", True, icons_dir=server_dir / "weather-icons"
     )
-    night_icon = weather_transit.iconMap(
+    night_icon = weather.iconMap(
         "Clear", False, icons_dir=server_dir / "weather-icons"
     )
 
@@ -24,7 +25,7 @@ def test_icon_map_uses_night_icon_when_available(server_dir):
 
 def test_file_checker_create_and_use_old(tmp_path):
     missing_path = tmp_path / "missing.json"
-    assert weather_transit.fileChecker(missing_path, 5) == "create"
+    assert utils.fileChecker(missing_path, 5) == "create"
 
     cached_path = tmp_path / "cached.json"
     cached_path.write_text("{}", encoding="utf-8")
@@ -32,15 +33,15 @@ def test_file_checker_create_and_use_old(tmp_path):
 
     old_timestamp = 990
     os.utime(cached_path, (old_timestamp, old_timestamp))
-    assert weather_transit.fileChecker(cached_path, 5, now=now) == "create"
+    assert utils.fileChecker(cached_path, 5, now=now) == "create"
 
     fresh_timestamp = 998
     os.utime(cached_path, (fresh_timestamp, fresh_timestamp))
-    assert weather_transit.fileChecker(cached_path, 5, now=now) == "useOld"
+    assert utils.fileChecker(cached_path, 5, now=now) == "useOld"
 
 
 def test_parse_current_weather(weather_data):
-    current = weather_transit.parse_current_weather(weather_data)
+    current = weather.parse_current_weather(weather_data)
 
     assert current == {
         "temperature": 62,
@@ -54,7 +55,7 @@ def test_parse_current_weather(weather_data):
 
 
 def test_parse_hourly_forecast(weather_data):
-    hourly = weather_transit.parse_hourly_forecast(
+    hourly = weather.parse_hourly_forecast(
         weather_data, local_tz="America/Chicago"
     )
 
@@ -80,7 +81,7 @@ def test_parse_hourly_forecast(weather_data):
 
 
 def test_parse_daily_forecast(weather_data):
-    daily = weather_transit.parse_daily_forecast(
+    daily = weather.parse_daily_forecast(
         weather_data, local_tz="America/Chicago"
     )
 

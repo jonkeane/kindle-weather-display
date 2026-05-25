@@ -1,6 +1,6 @@
 import datetime
 
-import weather_transit
+import transit
 
 
 def test_parse_transit_predictions_from_saved_cta_responses(
@@ -8,7 +8,7 @@ def test_parse_transit_predictions_from_saved_cta_responses(
 ):
     now = datetime.datetime(2026, 5, 25, 7, 59)
 
-    arrivals = weather_transit.parse_transit_predictions(
+    arrivals = transit.parse_transit_predictions(
         fixtures_dir / "busPredictions.xml",
         fixtures_dir / "trainPredictions.xml",
         sample_config.buses_to_track,
@@ -47,7 +47,7 @@ def test_render_transit_replaces_minutes_and_missing_slots(sample_config):
     template = "BUS3_U1 BUS3_U1_DISP BUS3_U2 BUS3_U2_DISP BUS3_U3 BUS3_U3_DISP "
     template += "BUS3_D1 BUS3_D1_DISP BUS3_D2 BUS3_D2_DISP TIME DISP_TRANSIT"
 
-    output = weather_transit.render_transit(
+    output = transit.render_transit(
         template, arrivals, sample_config.bus_places, now=now
     )
 

@@ -1,6 +1,6 @@
 import datetime
 
-import weather_transit
+import rendering
 
 
 def test_build_current_output_replaces_weather_transit_and_view_placeholders(
@@ -11,7 +11,7 @@ def test_build_current_output_replaces_weather_transit_and_view_placeholders(
         encoding="utf-8"
     )
 
-    output = weather_transit.build_current_output(
+    output = rendering.build_current_output(
         weather_data,
         template,
         sample_config,
@@ -51,7 +51,7 @@ def test_build_hourly_output_replaces_hourly_placeholders(
         encoding="utf-8"
     )
 
-    output = weather_transit.build_hourly_output(
+    output = rendering.build_hourly_output(
         weather_data,
         template,
         sample_config,
@@ -77,7 +77,7 @@ def test_build_daily_output_replaces_daily_placeholders(
         encoding="utf-8"
     )
 
-    output = weather_transit.build_daily_output(
+    output = rendering.build_daily_output(
         weather_data,
         template,
         sample_config,
